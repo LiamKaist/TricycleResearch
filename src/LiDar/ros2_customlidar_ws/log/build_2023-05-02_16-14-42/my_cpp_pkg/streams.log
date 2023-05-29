@@ -1,0 +1,10 @@
+[0.017s] Invoking command in '/home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/local/bin/cmake --build /home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg -- -j8 -l8
+[0.078s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_data_subscriber_executable.dir/src/lidar_data_subscriber.cpp.o[0m
+[2.362s] [01m[K/home/lilultime/ros2_customlidar_ws/src/my_cpp_pkg/src/lidar_data_subscriber.cpp:13:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.362s]    13 | }
+[2.362s]       |  [01;31m[K^[m[K
+[2.362s]       |  [32m[K;[m[K
+[2.799s] gmake[2]: *** [CMakeFiles/lidar_data_subscriber_executable.dir/build.make:76: CMakeFiles/lidar_data_subscriber_executable.dir/src/lidar_data_subscriber.cpp.o] Error 1
+[2.799s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lidar_data_subscriber_executable.dir/all] Error 2
+[2.800s] gmake: *** [Makefile:146: all] Error 2
+[2.807s] Invoked command in '/home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/local/bin/cmake --build /home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg -- -j8 -l8

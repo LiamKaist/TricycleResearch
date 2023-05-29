@@ -1,0 +1,25 @@
+[0.015s] Invoking command in '/home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/local/bin/cmake --build /home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg -- -j8 -l8
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_data_subscriber_executable.dir/src/lidar_data_subscriber.cpp.o[0m
+[7.765s] [100%] [32m[1mLinking CXX executable lidar_data_subscriber_executable[0m
+[8.151s] [100%] Built target lidar_data_subscriber_executable
+[8.159s] Invoked command in '/home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/local/bin/cmake --build /home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg -- -j8 -l8
+[8.233s] Invoking command in '/home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/local/bin/cmake --install /home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg
+[8.260s] -- Install configuration: ""
+[8.260s] -- Installing: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/lib/my_cpp_pkg/lidar_data_subscriber_executable
+[8.265s] -- Set runtime path of "/home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/lib/my_cpp_pkg/lidar_data_subscriber_executable" to ""
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[8.265s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[8.266s] -- Installing: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[8.266s] -- Up-to-date: /home/lilultime/ros2_customlidar_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[8.272s] Invoked command in '/home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/local/bin/cmake --install /home/lilultime/ros2_customlidar_ws/build/my_cpp_pkg
