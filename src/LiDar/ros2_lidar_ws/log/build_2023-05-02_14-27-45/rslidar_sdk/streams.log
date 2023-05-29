@@ -1,0 +1,32 @@
+[0.012s] Invoking command in '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk': AMENT_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/lilultime/ros2_lidar_ws/build/rslidar_sdk -- -j8 -l8
+[0.062s] [ 33%] [32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o[0m
+[18.450s] [ 66%] [32m[1mLinking CXX executable rslidar_sdk_node[0m
+[18.699s] [100%] Built target rslidar_sdk_node
+[18.709s] Invoked command in '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk' returned '0': AMENT_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/lilultime/ros2_lidar_ws/build/rslidar_sdk -- -j8 -l8
+[18.762s] Invoking command in '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk': AMENT_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/lilultime/ros2_lidar_ws/build/rslidar_sdk
+[18.790s] -- Install configuration: "Release"
+[18.790s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node
+[18.792s] -- Set runtime path of "/home/lilultime/ros2_lidar_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node" to ""
+[18.792s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch
+[18.792s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/elequent_start.py
+[18.792s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.py
+[18.793s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.launch
+[18.793s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz
+[18.793s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz2.rviz
+[18.793s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz.rviz
+[18.794s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/package_run_dependencies/rslidar_sdk
+[18.794s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/parent_prefix_path/rslidar_sdk
+[18.795s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.sh
+[18.795s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.dsv
+[18.795s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.sh
+[18.795s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.dsv
+[18.796s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.bash
+[18.796s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.sh
+[18.796s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.zsh
+[18.797s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.dsv
+[18.797s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/package.dsv
+[18.797s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/packages/rslidar_sdk
+[18.798s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig.cmake
+[18.798s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig-version.cmake
+[18.798s] -- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/package.xml
+[18.807s] Invoked command in '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk' returned '0': AMENT_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/lilultime/ros2_lidar_ws/build/rslidar_sdk

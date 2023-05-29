@@ -1,0 +1,28 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable rslidar_sdk_node[0m
+[100%] Built target rslidar_sdk_node
+-- Install configuration: "Release"
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node
+-- Set runtime path of "/home/lilultime/ros2_lidar_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node" to ""
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/elequent_start.py
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.py
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.launch
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz2.rviz
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz.rviz
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/package_run_dependencies/rslidar_sdk
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/parent_prefix_path/rslidar_sdk
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.sh
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.dsv
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.sh
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.dsv
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.bash
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.sh
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.zsh
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.dsv
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/package.dsv
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/packages/rslidar_sdk
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig.cmake
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig-version.cmake
+-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/package.xml

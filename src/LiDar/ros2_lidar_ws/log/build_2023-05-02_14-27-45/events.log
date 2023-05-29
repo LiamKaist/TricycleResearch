@@ -1,0 +1,382 @@
+[0.000000] (-) TimerEvent: {}
+[0.000213] (rslidar_msg) JobQueued: {'identifier': 'rslidar_msg', 'dependencies': OrderedDict()}
+[0.000299] (rslidar_sdk) JobQueued: {'identifier': 'rslidar_sdk', 'dependencies': OrderedDict([('rslidar_msg', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg')])}
+[0.000649] (rslidar_msg) JobStarted: {'identifier': 'rslidar_msg'}
+[0.011983] (rslidar_msg) JobProgress: {'identifier': 'rslidar_msg', 'progress': 'cmake'}
+[0.013927] (rslidar_msg) JobProgress: {'identifier': 'rslidar_msg', 'progress': 'build'}
+[0.013967] (rslidar_msg) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/lilultime/ros2_lidar_ws/build/rslidar_msg', '--', '-j8', '-l8'], 'cwd': '/home/lilultime/ros2_lidar_ws/build/rslidar_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lilultime'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lilultime'), ('OLDPWD', '/home/lilultime'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '2101'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lilultime/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lilultime'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lilultime'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lilultime/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lilultime-Lenovo-Y520-15IKBN:@/tmp/.ICE-unix/1911,unix/lilultime-Lenovo-Y520-15IKBN:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ca9765d4_6c74_40c1_adf7_f9626579cd6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MO8D41'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lilultime/ros2_ws/install/my_robot_controller:/home/lilultime/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lilultime/ros2_lidar_ws/build/rslidar_msg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lilultime/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.063640] (rslidar_msg) StdoutLine: {'line': b'[  3%] Built target rslidar_msg__cpp\n'}
+[0.064426] (rslidar_msg) StdoutLine: {'line': b'[ 12%] Built target rslidar_msg__rosidl_generator_c\n'}
+[0.069218] (rslidar_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_rslidar_msg\n'}
+[0.078563] (rslidar_msg) StdoutLine: {'line': b'[ 22%] Built target rslidar_msg__rosidl_typesupport_introspection_cpp\n'}
+[0.078877] (rslidar_msg) StdoutLine: {'line': b'[ 38%] Built target rslidar_msg__rosidl_typesupport_cpp\n'}
+[0.079046] (rslidar_msg) StdoutLine: {'line': b'[ 41%] Built target rslidar_msg__rosidl_typesupport_c\n'}
+[0.079270] (rslidar_msg) StdoutLine: {'line': b'[ 51%] Built target rslidar_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.079435] (rslidar_msg) StdoutLine: {'line': b'[ 61%] Built target rslidar_msg__rosidl_typesupport_fastrtps_c\n'}
+[0.079848] (rslidar_msg) StdoutLine: {'line': b'[ 70%] Built target rslidar_msg__rosidl_typesupport_introspection_c\n'}
+[0.088971] (rslidar_msg) StdoutLine: {'line': b'[ 70%] Built target rslidar_msg\n'}
+[0.099021] (-) TimerEvent: {}
+[0.099287] (rslidar_msg) StdoutLine: {'line': b'[ 74%] Built target rslidar_msg__py\n'}
+[0.110614] (rslidar_msg) StdoutLine: {'line': b'[ 80%] Built target rslidar_msg__rosidl_generator_py\n'}
+[0.122146] (rslidar_msg) StdoutLine: {'line': b'[ 93%] Built target rslidar_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.122415] (rslidar_msg) StdoutLine: {'line': b'[ 93%] Built target rslidar_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.122546] (rslidar_msg) StdoutLine: {'line': b'[100%] Built target rslidar_msg__rosidl_typesupport_c__pyext\n'}
+[0.199131] (-) TimerEvent: {}
+[0.299443] (-) TimerEvent: {}
+[0.352262] (rslidar_msg) StdoutLine: {'line': b'running egg_info\n'}
+[0.352863] (rslidar_msg) StdoutLine: {'line': b'writing rslidar_msg.egg-info/PKG-INFO\n'}
+[0.353083] (rslidar_msg) StdoutLine: {'line': b'writing dependency_links to rslidar_msg.egg-info/dependency_links.txt\n'}
+[0.353298] (rslidar_msg) StdoutLine: {'line': b'writing top-level names to rslidar_msg.egg-info/top_level.txt\n'}
+[0.355286] (rslidar_msg) StdoutLine: {'line': b"reading manifest file 'rslidar_msg.egg-info/SOURCES.txt'\n"}
+[0.355866] (rslidar_msg) StdoutLine: {'line': b"writing manifest file 'rslidar_msg.egg-info/SOURCES.txt'\n"}
+[0.376447] (rslidar_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rslidar_msg_egg\n'}
+[0.384997] (rslidar_msg) CommandEnded: {'returncode': 0}
+[0.399548] (-) TimerEvent: {}
+[0.463211] (rslidar_msg) JobProgress: {'identifier': 'rslidar_msg', 'progress': 'install'}
+[0.494726] (rslidar_msg) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/lilultime/ros2_lidar_ws/build/rslidar_msg'], 'cwd': '/home/lilultime/ros2_lidar_ws/build/rslidar_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lilultime'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lilultime'), ('OLDPWD', '/home/lilultime'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '2101'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lilultime/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lilultime'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lilultime'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lilultime/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lilultime-Lenovo-Y520-15IKBN:@/tmp/.ICE-unix/1911,unix/lilultime-Lenovo-Y520-15IKBN:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ca9765d4_6c74_40c1_adf7_f9626579cd6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MO8D41'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lilultime/ros2_ws/install/my_robot_controller:/home/lilultime/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lilultime/ros2_lidar_ws/build/rslidar_msg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lilultime/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.499651] (-) TimerEvent: {}
+[0.520830] (rslidar_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.521148] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/ament_index/resource_index/rosidl_interfaces/rslidar_msg\n'}
+[0.521546] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg\n'}
+[0.521649] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg\n'}
+[0.521714] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rslidar_packet.h\n'}
+[0.521799] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.521886] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail\n'}
+[0.521970] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__functions.h\n'}
+[0.522096] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__struct.h\n'}
+[0.522205] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__functions.c\n'}
+[0.522271] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.h\n'}
+[0.522335] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/library_path.sh\n'}
+[0.522399] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/library_path.dsv\n'}
+[0.522462] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_generator_c.so\n'}
+[0.522526] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg\n'}
+[0.522589] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg\n'}
+[0.522691] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.522760] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail\n'}
+[0.522867] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[0.522934] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.523043] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg\n'}
+[0.523110] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg\n'}
+[0.523252] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail\n'}
+[0.523417] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__builder.hpp\n'}
+[0.523536] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__traits.hpp\n'}
+[0.523700] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__struct.hpp\n'}
+[0.523759] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rslidar_packet.hpp\n'}
+[0.523817] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg\n'}
+[0.523875] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg\n'}
+[0.523989] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.524047] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail\n'}
+[0.524104] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/dds_fastrtps\n'}
+[0.524161] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.524237] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.524401] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg\n'}
+[0.524510] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg\n'}
+[0.524578] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.524698] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail\n'}
+[0.524766] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.c\n'}
+[0.524908] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_introspection_c.h\n'}
+[0.525080] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_introspection_c.so\n'}
+[0.525434] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_c.so\n'}
+[0.525740] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg\n'}
+[0.526059] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg\n'}
+[0.526166] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail\n'}
+[0.526300] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.cpp\n'}
+[0.526408] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.526825] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.526938] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_cpp.so\n'}
+[0.527118] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/pythonpath.sh\n'}
+[0.527266] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/pythonpath.dsv\n'}
+[0.527376] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info\n'}
+[0.527479] (rslidar_msg) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.527599] (rslidar_msg) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.527751] (rslidar_msg) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.527902] (rslidar_msg) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.528077] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg\n'}
+[0.528178] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.528302] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_c.c\n'}
+[0.528369] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.528433] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.528534] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/librslidar_msg__rosidl_generator_py.so\n'}
+[0.528600] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.528730] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.528791] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg\n'}
+[0.528850] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/_rslidar_packet.py\n'}
+[0.528908] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/_rslidar_packet_s.c\n'}
+[0.528966] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/__init__.py\n'}
+[0.529029] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/__init__.py\n'}
+[0.559273] (rslidar_msg) StdoutLine: {'line': b"Listing '/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg'...\n"}
+[0.559439] (rslidar_msg) StdoutLine: {'line': b"Listing '/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg'...\n"}
+[0.563538] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.563976] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.564393] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.564809] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_generator_py.so\n'}
+[0.565113] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/msg/RslidarPacket.idl\n'}
+[0.565395] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/msg/RslidarPacket.msg\n'}
+[0.565601] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/ament_index/resource_index/package_run_dependencies/rslidar_msg\n'}
+[0.565723] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/ament_index/resource_index/parent_prefix_path/rslidar_msg\n'}
+[0.565828] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/ament_prefix_path.sh\n'}
+[0.565911] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/ament_prefix_path.dsv\n'}
+[0.566004] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/path.sh\n'}
+[0.566065] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/environment/path.dsv\n'}
+[0.566125] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/local_setup.bash\n'}
+[0.566184] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/local_setup.sh\n'}
+[0.566261] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/local_setup.zsh\n'}
+[0.566320] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/local_setup.dsv\n'}
+[0.566397] (rslidar_msg) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/package.dsv\n'}
+[0.566477] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/ament_index/resource_index/packages/rslidar_msg\n'}
+[0.566548] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_cExport.cmake\n'}
+[0.566641] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.566756] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.566837] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.566914] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_cppExport.cmake\n'}
+[0.566994] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.567071] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.567150] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.567216] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.567370] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cExport.cmake\n'}
+[0.567432] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.567512] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.567692] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.567789] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cppExport.cmake\n'}
+[0.567854] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.567949] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_pyExport.cmake\n'}
+[0.568026] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.568102] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.568193] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.568269] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.568346] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.568423] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.568515] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.568590] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.568647] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msgConfig.cmake\n'}
+[0.568705] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msgConfig-version.cmake\n'}
+[0.568762] (rslidar_msg) StdoutLine: {'line': b'-- Up-to-date: /home/lilultime/ros2_lidar_ws/install/rslidar_msg/share/rslidar_msg/package.xml\n'}
+[0.575909] (rslidar_msg) CommandEnded: {'returncode': 0}
+[0.599755] (-) TimerEvent: {}
+[0.681244] (rslidar_msg) JobEnded: {'identifier': 'rslidar_msg', 'rc': 0}
+[0.683650] (rslidar_sdk) JobStarted: {'identifier': 'rslidar_sdk'}
+[0.692209] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'cmake'}
+[0.692973] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'build'}
+[0.693976] (rslidar_sdk) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk', '--', '-j8', '-l8'], 'cwd': '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lilultime'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lilultime'), ('OLDPWD', '/home/lilultime'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '2101'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lilultime/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lilultime'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lilultime'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lilultime/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lilultime-Lenovo-Y520-15IKBN:@/tmp/.ICE-unix/1911,unix/lilultime-Lenovo-Y520-15IKBN:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ca9765d4_6c74_40c1_adf7_f9626579cd6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MO8D41'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_robot_controller:/home/lilultime/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:/home/lilultime/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.699863] (-) TimerEvent: {}
+[0.745744] (rslidar_sdk) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o\x1b[0m\n'}
+[0.799989] (-) TimerEvent: {}
+[0.900281] (-) TimerEvent: {}
+[1.000568] (-) TimerEvent: {}
+[1.100878] (-) TimerEvent: {}
+[1.201173] (-) TimerEvent: {}
+[1.301483] (-) TimerEvent: {}
+[1.401770] (-) TimerEvent: {}
+[1.502080] (-) TimerEvent: {}
+[1.602389] (-) TimerEvent: {}
+[1.702677] (-) TimerEvent: {}
+[1.802969] (-) TimerEvent: {}
+[1.903359] (-) TimerEvent: {}
+[2.003641] (-) TimerEvent: {}
+[2.103972] (-) TimerEvent: {}
+[2.204257] (-) TimerEvent: {}
+[2.304543] (-) TimerEvent: {}
+[2.404857] (-) TimerEvent: {}
+[2.505116] (-) TimerEvent: {}
+[2.605404] (-) TimerEvent: {}
+[2.705696] (-) TimerEvent: {}
+[2.806010] (-) TimerEvent: {}
+[2.906339] (-) TimerEvent: {}
+[3.006622] (-) TimerEvent: {}
+[3.106976] (-) TimerEvent: {}
+[3.207363] (-) TimerEvent: {}
+[3.307628] (-) TimerEvent: {}
+[3.407946] (-) TimerEvent: {}
+[3.508242] (-) TimerEvent: {}
+[3.608555] (-) TimerEvent: {}
+[3.708852] (-) TimerEvent: {}
+[3.809142] (-) TimerEvent: {}
+[3.909447] (-) TimerEvent: {}
+[4.009748] (-) TimerEvent: {}
+[4.110093] (-) TimerEvent: {}
+[4.210398] (-) TimerEvent: {}
+[4.310745] (-) TimerEvent: {}
+[4.411062] (-) TimerEvent: {}
+[4.511350] (-) TimerEvent: {}
+[4.611627] (-) TimerEvent: {}
+[4.711958] (-) TimerEvent: {}
+[4.812271] (-) TimerEvent: {}
+[4.912622] (-) TimerEvent: {}
+[5.012961] (-) TimerEvent: {}
+[5.113274] (-) TimerEvent: {}
+[5.213584] (-) TimerEvent: {}
+[5.313885] (-) TimerEvent: {}
+[5.414203] (-) TimerEvent: {}
+[5.514503] (-) TimerEvent: {}
+[5.614805] (-) TimerEvent: {}
+[5.715120] (-) TimerEvent: {}
+[5.815429] (-) TimerEvent: {}
+[5.915764] (-) TimerEvent: {}
+[6.016073] (-) TimerEvent: {}
+[6.116398] (-) TimerEvent: {}
+[6.216723] (-) TimerEvent: {}
+[6.317008] (-) TimerEvent: {}
+[6.417316] (-) TimerEvent: {}
+[6.517601] (-) TimerEvent: {}
+[6.617929] (-) TimerEvent: {}
+[6.718256] (-) TimerEvent: {}
+[6.818566] (-) TimerEvent: {}
+[6.918886] (-) TimerEvent: {}
+[7.019168] (-) TimerEvent: {}
+[7.119550] (-) TimerEvent: {}
+[7.219896] (-) TimerEvent: {}
+[7.320215] (-) TimerEvent: {}
+[7.420529] (-) TimerEvent: {}
+[7.520822] (-) TimerEvent: {}
+[7.621153] (-) TimerEvent: {}
+[7.721504] (-) TimerEvent: {}
+[7.821803] (-) TimerEvent: {}
+[7.922124] (-) TimerEvent: {}
+[8.022515] (-) TimerEvent: {}
+[8.122842] (-) TimerEvent: {}
+[8.223153] (-) TimerEvent: {}
+[8.323513] (-) TimerEvent: {}
+[8.423844] (-) TimerEvent: {}
+[8.524145] (-) TimerEvent: {}
+[8.624449] (-) TimerEvent: {}
+[8.724780] (-) TimerEvent: {}
+[8.825189] (-) TimerEvent: {}
+[8.925472] (-) TimerEvent: {}
+[9.025754] (-) TimerEvent: {}
+[9.126057] (-) TimerEvent: {}
+[9.226379] (-) TimerEvent: {}
+[9.326663] (-) TimerEvent: {}
+[9.426961] (-) TimerEvent: {}
+[9.527318] (-) TimerEvent: {}
+[9.627605] (-) TimerEvent: {}
+[9.727954] (-) TimerEvent: {}
+[9.828240] (-) TimerEvent: {}
+[9.928531] (-) TimerEvent: {}
+[10.028864] (-) TimerEvent: {}
+[10.129164] (-) TimerEvent: {}
+[10.229500] (-) TimerEvent: {}
+[10.329817] (-) TimerEvent: {}
+[10.430127] (-) TimerEvent: {}
+[10.530424] (-) TimerEvent: {}
+[10.630701] (-) TimerEvent: {}
+[10.731006] (-) TimerEvent: {}
+[10.831348] (-) TimerEvent: {}
+[10.931854] (-) TimerEvent: {}
+[11.032153] (-) TimerEvent: {}
+[11.132452] (-) TimerEvent: {}
+[11.232769] (-) TimerEvent: {}
+[11.333071] (-) TimerEvent: {}
+[11.433366] (-) TimerEvent: {}
+[11.533655] (-) TimerEvent: {}
+[11.633907] (-) TimerEvent: {}
+[11.734223] (-) TimerEvent: {}
+[11.834517] (-) TimerEvent: {}
+[11.934789] (-) TimerEvent: {}
+[12.035070] (-) TimerEvent: {}
+[12.135372] (-) TimerEvent: {}
+[12.235674] (-) TimerEvent: {}
+[12.335977] (-) TimerEvent: {}
+[12.436274] (-) TimerEvent: {}
+[12.536613] (-) TimerEvent: {}
+[12.636904] (-) TimerEvent: {}
+[12.737185] (-) TimerEvent: {}
+[12.837493] (-) TimerEvent: {}
+[12.937926] (-) TimerEvent: {}
+[13.038226] (-) TimerEvent: {}
+[13.138558] (-) TimerEvent: {}
+[13.238893] (-) TimerEvent: {}
+[13.339196] (-) TimerEvent: {}
+[13.439588] (-) TimerEvent: {}
+[13.539870] (-) TimerEvent: {}
+[13.640203] (-) TimerEvent: {}
+[13.740537] (-) TimerEvent: {}
+[13.840815] (-) TimerEvent: {}
+[13.941145] (-) TimerEvent: {}
+[14.041504] (-) TimerEvent: {}
+[14.141802] (-) TimerEvent: {}
+[14.242102] (-) TimerEvent: {}
+[14.342399] (-) TimerEvent: {}
+[14.442678] (-) TimerEvent: {}
+[14.542987] (-) TimerEvent: {}
+[14.643330] (-) TimerEvent: {}
+[14.743613] (-) TimerEvent: {}
+[14.843927] (-) TimerEvent: {}
+[14.944208] (-) TimerEvent: {}
+[15.044540] (-) TimerEvent: {}
+[15.144861] (-) TimerEvent: {}
+[15.245154] (-) TimerEvent: {}
+[15.345478] (-) TimerEvent: {}
+[15.445787] (-) TimerEvent: {}
+[15.546141] (-) TimerEvent: {}
+[15.646486] (-) TimerEvent: {}
+[15.746788] (-) TimerEvent: {}
+[15.847095] (-) TimerEvent: {}
+[15.947422] (-) TimerEvent: {}
+[16.047739] (-) TimerEvent: {}
+[16.148042] (-) TimerEvent: {}
+[16.248379] (-) TimerEvent: {}
+[16.348676] (-) TimerEvent: {}
+[16.448974] (-) TimerEvent: {}
+[16.549294] (-) TimerEvent: {}
+[16.649601] (-) TimerEvent: {}
+[16.749907] (-) TimerEvent: {}
+[16.850207] (-) TimerEvent: {}
+[16.950510] (-) TimerEvent: {}
+[17.050808] (-) TimerEvent: {}
+[17.151097] (-) TimerEvent: {}
+[17.251392] (-) TimerEvent: {}
+[17.351668] (-) TimerEvent: {}
+[17.451954] (-) TimerEvent: {}
+[17.552264] (-) TimerEvent: {}
+[17.652560] (-) TimerEvent: {}
+[17.752842] (-) TimerEvent: {}
+[17.853171] (-) TimerEvent: {}
+[17.953496] (-) TimerEvent: {}
+[18.053796] (-) TimerEvent: {}
+[18.154157] (-) TimerEvent: {}
+[18.254441] (-) TimerEvent: {}
+[18.354726] (-) TimerEvent: {}
+[18.455013] (-) TimerEvent: {}
+[18.555351] (-) TimerEvent: {}
+[18.655605] (-) TimerEvent: {}
+[18.755884] (-) TimerEvent: {}
+[18.856188] (-) TimerEvent: {}
+[18.956512] (-) TimerEvent: {}
+[19.056870] (-) TimerEvent: {}
+[19.133442] (rslidar_sdk) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable rslidar_sdk_node\x1b[0m\n'}
+[19.156989] (-) TimerEvent: {}
+[19.257308] (-) TimerEvent: {}
+[19.357605] (-) TimerEvent: {}
+[19.382942] (rslidar_sdk) StdoutLine: {'line': b'[100%] Built target rslidar_sdk_node\n'}
+[19.392736] (rslidar_sdk) CommandEnded: {'returncode': 0}
+[19.444733] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'install'}
+[19.445304] (rslidar_sdk) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk'], 'cwd': '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lilultime'), ('LC_TIME', 'nb_NO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lilultime'), ('OLDPWD', '/home/lilultime'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nb_NO.UTF-8'), ('SYSTEMD_EXEC_PID', '2101'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lilultime/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lilultime'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lilultime'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lilultime/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lilultime-Lenovo-Y520-15IKBN:@/tmp/.ICE-unix/1911,unix/lilultime-Lenovo-Y520-15IKBN:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nb_NO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ca9765d4_6c74_40c1_adf7_f9626579cd6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nb_NO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MO8D41'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_robot_controller:/home/lilultime/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nb_NO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nb_NO.UTF-8'), ('LC_IDENTIFICATION', 'nb_NO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lilultime/ros2_lidar_ws/build/rslidar_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:/home/lilultime/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'nb_NO.UTF-8'), ('LC_PAPER', 'nb_NO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lilultime/ros2_lidar_ws/install/rslidar_msg:/home/lilultime/ros2_ws/install/my_cpp_pkg:/home/lilultime/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[19.457741] (-) TimerEvent: {}
+[19.473035] (rslidar_sdk) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[19.473350] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node\n'}
+[19.475175] (rslidar_sdk) StdoutLine: {'line': b'-- Set runtime path of "/home/lilultime/ros2_lidar_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node" to ""\n'}
+[19.475410] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch\n'}
+[19.475697] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/elequent_start.py\n'}
+[19.475981] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.py\n'}
+[19.476221] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.launch\n'}
+[19.476440] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz\n'}
+[19.476644] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz2.rviz\n'}
+[19.476880] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz.rviz\n'}
+[19.477233] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/package_run_dependencies/rslidar_sdk\n'}
+[19.477617] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/parent_prefix_path/rslidar_sdk\n'}
+[19.478139] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.sh\n'}
+[19.478323] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.dsv\n'}
+[19.478603] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.sh\n'}
+[19.478904] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.dsv\n'}
+[19.479302] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.bash\n'}
+[19.479572] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.sh\n'}
+[19.479872] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.zsh\n'}
+[19.480158] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.dsv\n'}
+[19.480452] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/package.dsv\n'}
+[19.480907] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/ament_index/resource_index/packages/rslidar_sdk\n'}
+[19.481245] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig.cmake\n'}
+[19.481511] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig-version.cmake\n'}
+[19.481795] (rslidar_sdk) StdoutLine: {'line': b'-- Installing: /home/lilultime/ros2_lidar_ws/install/rslidar_sdk/share/rslidar_sdk/package.xml\n'}
+[19.490285] (rslidar_sdk) CommandEnded: {'returncode': 0}
+[19.555100] (rslidar_sdk) JobEnded: {'identifier': 'rslidar_sdk', 'rc': 0}
+[19.556095] (-) EventReactorShutdown: {}

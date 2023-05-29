@@ -1,0 +1,12 @@
+In file included from [01m[K/home/lilultime/ros2_lidar_ws/src/rslidar_sdk/src/rs_driver/src/rs_driver/driver/input/input_factory.hpp:42[m[K,
+                 from [01m[K/home/lilultime/ros2_lidar_ws/src/rslidar_sdk/src/rs_driver/src/rs_driver/driver/lidar_driver_impl.hpp:41[m[K,
+                 from [01m[K/home/lilultime/ros2_lidar_ws/src/rslidar_sdk/src/rs_driver/src/rs_driver/api/lidar_driver.hpp:35[m[K,
+                 from [01m[K/home/lilultime/ros2_lidar_ws/src/rslidar_sdk/src/source/source_driver.hpp:37[m[K,
+                 from [01m[K/home/lilultime/ros2_lidar_ws/src/rslidar_sdk/src/manager/node_manager.cpp:34[m[K:
+[01m[K/home/lilultime/ros2_lidar_ws/src/rslidar_sdk/src/rs_driver/src/rs_driver/driver/input/input_pcap.hpp:43:10:[m[K [01;31m[Kfatal error: [m[Kpcap.h: No such file or directory
+   43 | #include [01;31m[K<pcap.h>[m[K
+      |          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rslidar_sdk_node.dir/build.make:90: CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:154: CMakeFiles/rslidar_sdk_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
