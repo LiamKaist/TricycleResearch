@@ -1,1 +1,3 @@
 https://www.osti.gov/servlets/purl/1783431
+
+Pour le radar, il faut créer un Node qui permet de lire les données provenant du Bus CAN.
