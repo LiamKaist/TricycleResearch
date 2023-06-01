@@ -17,4 +17,4 @@ Il a été réalisé par :
 Nos tuteurs étaient : 
 - Élodie CHANTHERY
 - Sébastien DI MERCURIO 
-  Avec l'aide d'Abdou Rahamane BOUBACAR ALZOUMA
+- Avec l'aide d'Abdou Rahamane BOUBACAR ALZOUMA
