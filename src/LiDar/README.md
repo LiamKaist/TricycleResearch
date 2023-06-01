@@ -21,7 +21,6 @@ Make sure to check that the configuration of the rslidar_sdk provided on github 
 
 I had to change it to RS16 according to documentation and this github :
   To launch the node => ros2 launch rslidar_sdk start.py
-![image](https://github.com/LiamKaist/TricycleResearch/assets/117256858/1bc19563-ee7a-4a7a-8c19-2d2f9dbde2a3)
 
 
 Français : 
