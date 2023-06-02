@@ -18,6 +18,7 @@ Pour faire marcher le rs_lidar_ws qui permet de récupérer les données du Lida
 (Prérequis : Une version de ROS2 (La notre étant ROS2 Humble))
   
 rs_lidar_ws est un Workspace ROS2 récupéré sur le github suivant => https://github.com/RoboSense-LiDAR/rslidar_sdk/blob/main/doc/howto, il permet de faire fonctionner le LiDAR
+  
 rs_customlidar_ws est un workspace ROS2 créé par Liam CHRISMENT, il permet de s'abonner au topic créé par rs_lidar_sdk afin de récupérer les données que l'on souhaite, de manière directe.
   
 Pour visualiser les données du LiDAR avec Rviz:
