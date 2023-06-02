@@ -22,12 +22,12 @@ __rs_lidar_ws__ est un Workspace ROS2 récupéré sur le github suivant => [lien
 __rs_customlidar_ws__ est un workspace ROS2 créé par Liam CHRISMENT, il permet de s'abonner au topic créé par rs_lidar_sdk afin de récupérer les données que l'on souhaite, de manière directe.
   
 Pour visualiser les données du LiDAR avec Rviz:
-Il faut que vous ayez installé Rviz. Un tutoriel est disponible a l'adresse suivant : https://installati.one/install-rviz-ubuntu-22-04/.
+Il faut que vous ayez installé Rviz. Un tutoriel est disponible a l'adresse suivant : [Installation Rviz](https://installati.one/install-rviz-ubuntu-22-04/.)
  
 __PROBLEME ICI__
 Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante (pour pouvoir utiliser les fonctionnalités de ROS2), ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande : 
 Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante:  
-  ros2 launch rslidar_sdk start.py
+  'ros2 launch rslidar_sdk start.py'
   
 Si vous ne voyez rien sur Rviz, c'est que le fichier de configuration de rs_lidar_ws est mal configuré, il vous faut changer le fichier config.yaml dans le répertoire suivant => ros2_lidar_ws/src/rslidar_sdk/config
    
@@ -35,10 +35,10 @@ Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar util
 
 Après avoir lancé ce node, vous pouvez lancer le node fourni dans rs_custom_lidar.
 Pour cela il vous faudra "sourcer" le fichier setup.bash dans le répertoire ros2_custom_lidar :  
-  source setup.bash
+  'source setup.bash'
   
 Il faut lancer l'éxécutable (Node ROS2) nommé "lidar_data_subscriber_executable", pour cela il faut éxecuter la commande suivante :  
-  ros2 run my_cpp_pkg lidar_data_subscriber_executable
+  'ros2 run my_cpp_pkg lidar_data_subscriber_executable'
   
 Voilà ! Ce Node ira s'abonner au topic "rslidar_points" (généré par le Node executé dans rs_lidar_ws)
 Utilisez la commande : rqtgraph (voir internet pour les paquets à installer pour avoir cette commande)
