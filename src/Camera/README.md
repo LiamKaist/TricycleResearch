@@ -1,8 +1,8 @@
 Pour pouvoir utiliser la caméra, nous avons installé un driver pour les caméras de type v4l. Voir la suite pour le guide d'installation.
 
-Lisez https://index.ros.org/r/usb_cam 
+### 1/ Lisez https://index.ros.org/r/usb_cam 
 
-1/ Installation de v4l-utils avec la commande suivante:
+### 2/ Installation de v4l-utils avec la commande suivante:
 
 ```
 sudo apt-get install v4l-utils 
@@ -18,7 +18,7 @@ Assurez vous que la caméra est présente dans cette liste.
 Ensuite, il faut installer le DRIVER/Pilote suivant (driver pour ros2_humble) :
 `sudo apt-get install ros-humble-usb-cam`
 
-3/ Modification des paramètres :
+### 3/ Modification des paramètres :
 
 Avant de lancer la caméra, il est nécessaire de modifier les paramètres par défaut du pilote, qui se trouvent dans le fichier [/opt/ros/humble/share/usb_cam/config/params.yaml](/opt/ros/humble/share/usb_cam/config/params.yaml). Ce fichier comprend un ensemble de paramètres, dont le format pris en charge par la caméra. Choisissez le format **yuv2rgb** à la place de mjpeg2rgb.
 
@@ -28,7 +28,7 @@ Il faut également changer le paramètre video_device , il faut que le video dev
 v4l2-ctl --list-devices
 ```
 
-4/ Lancement du pilote :
+### 4/ Lancement du pilote :
 
 Pour lancer le package ROS2, exécutez simplement la commande suivante :
 
