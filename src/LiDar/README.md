@@ -30,18 +30,19 @@ Il vous suffit désormais de lancer le node fourni en utilisant la commande suiv
 ros2 launch rslidar_sdk start.py
   
 Si vous ne voyez rien sur Rviz, c'est que le fichier de configuration de rs_lidar_ws est mal configuré, il vous faut changer le fichier config.yaml dans le répertoire suivant => ros2_lidar_ws/src/rslidar_sdk/config
-  
-  
+   
 Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar utilisé (Nous avons mis lidar_type : RS16 , car notre LiDAR est le LiDAR 16 couches RoboSense.
 
-Après avoir lancé ce node, vous pouvez lancer le node fourni dans rs_custom_lidar, pour cela il vous faudra:
-  "sourcer" le fichier setup.bash dans le répertoire ros2_custom_lidar : source setup.bash
-  Il faut lancer l'éxécutable (Node ROS2) nommé "lidar_data_subscriber_executable" , pour cela il faut éxecuter la commande suivante :
-  ros2 run my_cpp_pkg lidar_data_subscriber_executable
+Après avoir lancé ce node, vous pouvez lancer le node fourni dans rs_custom_lidar.
+Pour cela il vous faudra "sourcer" le fichier setup.bash dans le répertoire ros2_custom_lidar : 
+source setup.bash
   
-  Voilà! Ce Node ira s'abonner au topic "rslidar_points" (généré par le Node executé dans rs_lidar_ws)
-  Utilisez la commande : rqtgraph (voir internet pour les paquets à installer pour avoir cette commande)
-  Cette commande permet de visualiser les Nodes, les topics etc qui s'executent sur l'ordinateur.
+Il faut lancer l'éxécutable (Node ROS2) nommé "lidar_data_subscriber_executable", pour cela il faut éxecuter la commande suivante :
+ros2 run my_cpp_pkg lidar_data_subscriber_executable
+  
+Voilà ! Ce Node ira s'abonner au topic "rslidar_points" (généré par le Node executé dans rs_lidar_ws)
+Utilisez la commande : rqtgraph (voir internet pour les paquets à installer pour avoir cette commande)
+Cette commande permet de visualiser les Nodes, les topics et autres qui s'executent sur l'ordinateur.
   
 
 
