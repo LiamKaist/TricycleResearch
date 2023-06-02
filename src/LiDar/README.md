@@ -24,10 +24,13 @@ __rs_customlidar_ws__ est un workspace ROS2 créé par Liam CHRISMENT, il permet
 Pour visualiser les données du LiDAR avec Rviz:
 Il faut que vous ayez installé Rviz. Un tutoriel est disponible a l'adresse suivant : [Installation Rviz](https://installati.one/install-rviz-ubuntu-22-04/.)
  
-__PROBLEME ICI__
-Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante (pour pouvoir utiliser les fonctionnalités de ROS2), ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande : 
-Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante:  
-  'ros2 launch rslidar_sdk start.py'
+
+Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante source /opt/ros/foxy/setup.bash (pour pouvoir utiliser les fonctionnalités de ROS2)
+  
+  
+Ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande : source setup.bash
+Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante:
+ros2 launch rslidar_sdk start.py
   
 Si vous ne voyez rien sur Rviz, c'est que le fichier de configuration de rs_lidar_ws est mal configuré, il vous faut changer le fichier config.yaml dans le répertoire suivant => ros2_lidar_ws/src/rslidar_sdk/config
    
