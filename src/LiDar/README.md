@@ -38,7 +38,7 @@ Pour cela il vous faudra "sourcer" le fichier setup.bash dans le répertoire ros
 source setup.bash
   
 Il faut lancer l'éxécutable (Node ROS2) nommé "lidar_data_subscriber_executable", pour cela il faut éxecuter la commande suivante :
-ros2 run my_cpp_pkg lidar_data_subscriber_executable
+       ros2 run my_cpp_pkg lidar_data_subscriber_executable
   
 Voilà ! Ce Node ira s'abonner au topic "rslidar_points" (généré par le Node executé dans rs_lidar_ws)
 Utilisez la commande : rqtgraph (voir internet pour les paquets à installer pour avoir cette commande)
