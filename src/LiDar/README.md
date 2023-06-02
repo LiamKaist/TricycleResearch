@@ -37,7 +37,7 @@ Il vous suffit désormais de lancer le node fourni en utilisant la commande `ros
   
 Si vous ne voyez rien sur Rviz, c'est que le fichier de configuration de rs_lidar_ws est mal configuré. Il vous faut changer le fichier config.yaml dans le répertoire suivant => [ros2_lidar_ws/src/rslidar_sdk/config](ros2_lidar_ws/src/rslidar_sdk/config)
    
-Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar utilisé (Nous avons mis `lidar_type : RS16`, car notre LiDAR est le LiDAR 16 couches RoboSense).
+Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar utilisé (Nous avons modifié `lidar_type : RS16`, car notre LiDAR est le LiDAR 16 couches RoboSense).
 
 Après avoir lancé ce node, vous pouvez lancer le node fourni dans rs_custom_lidar.
 Pour cela il vous faudra "sourcer" le fichier setup.bash dans le répertoire ros2_custom_lidar : `source setup.bash`
