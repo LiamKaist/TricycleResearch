@@ -30,6 +30,8 @@ Il vous suffit désormais de lancer le node fourni en utilisant la commande suiv
 ros2 launch rslidar_sdk start.py
   
 Si vous ne voyez rien sur Rviz, c'est que le fichier de configuration de rs_lidar_ws est mal configuré, il vous faut changer le fichier config.yaml dans le répertoire suivant => ros2_lidar_ws/src/rslidar_sdk/config
+  
+  
 Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar utilisé (Nous avons mis lidar_type : RS16 , car notre LiDAR est le LiDAR 16 couches RoboSense.
 
 Après avoir lancé ce node, vous pouvez lancer le node fourni dans rs_custom_lidar, pour cela il vous faudra:
