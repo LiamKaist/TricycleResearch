@@ -20,7 +20,7 @@ Ensuite, il faut installer le DRIVER/Pilote suivant (driver pour ros2_humble) :
 
 3/ Modification des paramètres :
 
-Avant de lancer la caméra, il est nécessaire de modifier les paramètres par défaut du pilote, qui se trouvent dans le fichier /opt/ros/humble/share/usb_cam/config/params.yaml. Ce fichier comprend un ensemble de paramètres, dont le format pris en charge par la caméra. Choisissez le format yuv2rgb à la place de mjpeg2rgb.
+Avant de lancer la caméra, il est nécessaire de modifier les paramètres par défaut du pilote, qui se trouvent dans le fichier [/opt/ros/humble/share/usb_cam/config/params.yaml](/opt/ros/humble/share/usb_cam/config/params.yaml). Ce fichier comprend un ensemble de paramètres, dont le format pris en charge par la caméra. Choisissez le format **yuv2rgb** à la place de mjpeg2rgb.
 
 Il faut également changer le paramètre video_device , il faut que le video device utilisé soit bien celui associé à votre caméra , vous pouvez vérifier ça avec la commande :
 
@@ -30,7 +30,7 @@ v4l2-ctl --list-devices
 
 4/ Lancement du pilote :
 
-Pour lancer le package ROS, exécutez simplement la commande suivante :
+Pour lancer le package ROS2, exécutez simplement la commande suivante :
 
 ```
 ros2 launch usb_cam demo_launch.py
