@@ -1,9 +1,10 @@
 # Le LiDAR
 
-# Présentation
-Le LiDAR que nous possédons est un LiDAR 16 couches réalisé par la société RoboSense. C'est un capteur qui va permettre de réaliser le mapping de l'environnment en envoyant 300 000 points par seconde à 360°. Le LiDAR va envoyer dans son environnement des signaux laser. Un phénomère de réflexion va avoir lieu avec l'ensemble des éléments présents autour de lui. Un détecteur présent dand le LiDAR va alors recevoir ces signaux réfléchis et va pouvoir ainsi calculer la distance avec chaque point de l'environnement, et ainsi, créer le mapping.
+## Présentation
+Le LiDAR que nous possédons est un LiDAR 16 couches réalisé par la société RoboSense.  
+C'est un capteur qui va permettre de réaliser le mapping de l'environnment en envoyant 300 000 points par seconde à 360°. Le LiDAR va envoyer dans son environnement des signaux laser. Un phénomère de réflexion va avoir lieu avec l'ensemble des éléments présents autour de lui. Un détecteur présent dand le LiDAR va alors recevoir ces signaux réfléchis et va pouvoir ainsi calculer la distance avec chaque point de l'environnement, et ainsi, créer le mapping.
 
-# Mise en place / Hardware
+## Mise en place / Hardware
   
 Alors vous voulez faire fonctionner le LiDAR ? Venez ici que je vous guide !
 
@@ -12,8 +13,8 @@ Ensuite, connectez un ordinateur sur lequel se trouve une version de ROS2 (Dans 
 Le LiDAR envoie ses données à l'adresse IP 192.168.1.102, il faut s'assurer que l'adresse IP associée à l'une de vos interfaces Ethernet soit configurée avec cette adresse. ("ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0" , commande utilisée sur Linux)
 Maintenant, il faut pouvoir récupérer et afficher les données reçues sur un terminal ou ROS2. Voir la partie Software ci-dessous!
   
-
-# Mise place / Software
+## Mise place / Software
+  
 Pour faire marcher le rs_lidar_ws qui permet de récupérer les données du Lidar et les afficher sur RVIZ, il faut suivre la procédure suivante:
 (Prérequis : Une version de ROS2 (La notre étant ROS2 Humble))
   
