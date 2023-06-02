@@ -6,9 +6,9 @@ Read https://index.ros.org/r/usb_cam
 sudo apt-get install v4l-utils 
 
 La commande suivante permet de lister les caméras v4l qui sont reconnues par le système d'exploitation Linux :
-'''cpp
+```
 v4l2-ctl --list-devices
-'''
+```
 
 
 Ensuite, il faut installer le DRIVER suivant (driver pour ros2_humble) :
