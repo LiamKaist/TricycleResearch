@@ -21,9 +21,9 @@ Nos tuteurs étaient :
 - Avec l'aide d'Abdou Rahamane BOUBACAR ALZOUMA
 
 ## Prérequis
-Pour réaliser notre projet, il faut tout d'abord pouvoir installer ROS2 Humble sur Ubuntu 22.04. Un tutoriel est disponible sur la page suivante : https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
+Pour réaliser notre projet, il faut tout d'abord pouvoir installer ROS2 Humble sur Ubuntu 22.04. Un tutoriel est disponible sur la page suivante : [Tutoriel installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
 
-Un tutoriel pour la comprendre le fonctionnement de ROS2 est diponible à l'adresse suivante : [Tutoriel](https://docs.ros.org/en/foxy/index.html)
+Un tutoriel pour la comprendre le fonctionnement de ROS2 est diponible à l'adresse suivante : [Fonctionnement](https://docs.ros.org/en/foxy/index.html)
 
 ## Contenu
 
