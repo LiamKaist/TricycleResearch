@@ -28,3 +28,9 @@ Un tutoriel pour comprendre le fonctionnement de ROS2 est diponible à l'adresse
 ## Contenu
 
 Ce GitHub est fait de la façon suivante. Un dossier source regroupe tous les capteurs. Dans chaque dossier de capteur, seront présents le package pour faire fonctionner le capteur ainsi qu'une explication pour commennt l'utiliser. Une documentation est également présente pour tous les capteurs
+
+## Projets précédents
+
+- [Tricycle 2022](https://github.com/INSA-GEI/geiflix/tree/2022_diskdastardly)
+- [Tricycle 2022](https://github.com/INSA-GEI/geiflix/tree/2022-muttley)
+- [GEIcar](https://github.com/INSA-GEI/geicar.git)
