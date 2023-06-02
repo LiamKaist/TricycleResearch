@@ -1,45 +1,49 @@
-# The Radar :
+# Le Radar :
 
-## Goal : 
-Our main goal for the radar was to be able to retrieve all data sent by the radar through a ROS2 publisher. After correctly configuring the hardware, the aim was to code the ROS2 publisher. Having no prior knowledge of the ARS-408-21 radar manufactured by Continental, nor CAN-Bus design, the hardware configuration took longer than expected.
+## Objectif : 
+Notre objectif principal pour le radar était de pouvoir récupérer toutes les données envoyées par celui-ci à travers un éditeur ROS2. Après avoir correctement configuré le matériel, l'objectif était de coder l'éditeur ROS2. N'ayant aucune connaissance préalable du radar ARS-408-21 fabriqué par Continental, ni de la conception du CAN-Bus, la configuration du matériel a pris plus de temps que prévu.
 
-## Methods and Issues :
+## Methodes et Résultats :
 
-### Description of ARS-408-21 : 
-According to technical documentation and a state of the art review on radars, here is a brief overview of Continental’s ARS-408-21. [Insert description]
-This radar is used for detecting objects in the automotive industry. It can scan both nearby or far range areas depending on its configuration. The far range setting enables it to detect objects as far as 250 metres, whereas its close range can only reach objects less than 70 metres away but has a wider Field of View. This radar is not fitted with a single antenna, but multiple. This enables it to detect several objects simultaneously. Here is a simplified description of how it works :
-Using the Doppler principle, it detects a multitude of points in space, a component processes this information and gathers the points into clusters if requested by the user. These clusters, along with additionnal information, are sent to a CAN transceiver (Controller Area Network) that then translates the data into CAN protocol standard messages. These messages are transmitted, according to the protocol, via two data wires, CANH and CANL. This sensor can then be integrated in a custom CAN BUS. When this bus is operational, messages can be sent to the radar to change its settings, these messages are detailed in the radar’s technical documentation.
+### Description du ARS-408-21 : 
+D'après la documentation technique et un état de l'art sur les radars, voici un bref aperçu de l'ARS-408-21 de Continental.[Insérer la description]  
+Ce radar est utilisé pour la détection d'objets dans l'industrie automobile. Il peut balayer les zones proches ou éloignées en fonction de sa configuration. Le réglage de la portée lointaine lui permet de détecter des objets jusqu'à 250 mètres, tandis que la portée proche ne peut atteindre que des objets situés à moins de 70 mètres, mais dispose d'un champ de vision plus large. Ce radar n'est pas équipé d'une seule antenne, mais de plusieurs. Cela lui permet de détecter plusieurs objets simultanément. 
 
-### Description of CAN-USB :
-##### Implementing drivers : 
-In order to use the CAN to USB converter, the correct drivers had to be installed. According to the documentation provided by ESD , socketCAN , an integrated Linux driver , is sufficient. However, a windows application was also provided and used in parallel to make sure that the issues encountered were less likely to be software related.
+Voici une description simplifiée de son fonctionnement :  
+En utilisant le principe Doppler, il détecte une multitude de points dans l'espace, un composant traite cette information et rassemble les points en grappes si l'utilisateur le demande. Ces groupes, ainsi que des informations supplémentaires, sont envoyés à un émetteur-récepteur CAN (Controller Area Network) qui traduit ensuite les données en messages standard du protocole CAN. Ces messages sont transmis, selon le protocole, via deux fils de données, CANH et CANL. Ce capteur peut ensuite être intégré dans un bus CAN personnalisé. Lorsque ce bus est opérationnel, des messages peuvent être envoyés au radar pour modifier ses paramètres, ces messages sont détaillés dans la documentation technique du radar.
 
-##### Setting up CAN-BUS :
-I had to set up a CAN BUS comprised of the Radar, the CAN-USB converter and 2 termination resistors, although arguably these resistors might be more important in longer buses that incorporate far more sensors. The BUS needs to be grounded at one place, I used the Ground of the CAN-USB. According to CAN standards, the bus obeyed the most basic and crucial rules. The length of the BUS is to be considered too, this will be discussed in the Issues and tests part of this report. [Should normalize the spelling of can bus]
-Issues and tests :
--No data is received from the radar, I looked at many angles to try and solve the problem :
--It might be the fault of the 120 Ohm termination resistors
--It might be the length of the radar’s cable
--it might be the connections between the cables
--It might be the power available to the radar (insufficient power)
--It might be the setting of the experiment (Indoors vs outdoors)
--It might be the software configuration on my Linux PC
--It might be the ESD CAN -USB transceiver’s fault
--It might be the Radar’s transceiver’s fault
--It might be a grounding issue
--It might be a data rate issue 
--It might be a problem with the radar’s configuration, since it can be configured by sending a message to the BUS
+### Description du CAN-USB :
 
-Extra test :
-In order to further strengthen my hypothesis that the radar is dysfunctional, I performed an extra experiment. I used a CAN communication module that can send messages to a CAN BUS. To send these messages, I wrote a script using an open source C++ Library specific to the microprocessor I used, specifically an ESP8266. I was able to correctly configure a simple CAN BUS using the integrated Linux socketCAN drivers. The following is a picture of the final setup :
+##### Implémenter les drivers : 
+Pour pouvoir utiliser le convertisseur CAN-USB, il faut installer les bons pilotes. Selon la documentation fournie par ESD, socketCAN, un pilote Linux intégré, est suffisant. Toutefois, une application Windows a également été fournie et utilisée en parallèle pour s'assurer que les problèmes rencontrés étaient moins susceptibles d'être liés au logiciel.
+
+##### Configuration du CAN-BUS :
+Nous avons dû mettre en place un BUS CAN composé du Radar, du convertisseur CAN-USB et de 2 résistances de terminaison, bien que ces résistances puissent être plus importantes dans des bus plus longs qui intègrent beaucoup plus de capteurs. Le BUS doit être mis à la terre à un endroit, nous avons utilisé la masse du CAN-USB. Selon les normes CAN, le bus obéit aux règles les plus élémentaires et les plus cruciales. La longueur du BUS doit également être prise en compte, ce qui sera discuté dans la partie "Problèmes et tests".
+
+Problèmes et tests :
+Aucune donnée n'est reçue du radar, nous avons regardé sous plusieurs angles pour essayer de résoudre le problème :
+- Il se peut que les résistances de terminaison de 120 Ohm soient en cause.
+- C'est peut-être la longueur du câble du radar.
+- Peut-être les connexions entre les câbles
+- Il peut s'agir de la puissance disponible pour le radar (puissance insuffisante)
+- Il peut s'agir de la configuration de l'expérience (à l'intérieur ou à l'extérieur)
+- La configuration du logiciel sur mon PC Linux
+- Il se peut que ce soit la faute de l'émetteur-récepteur ESD CAN -USB
+- Il peut s'agir d'un défaut de l'émetteur-récepteur du radar.
+- Il peut s'agir d'un problème de mise à la terre
+- Il peut s'agir d'un problème de débit de données 
+- Il peut s'agir d'un problème de configuration du radar, puisqu'il peut être configuré en envoyant un message au BUS.
+
+Test extra :
+Afin de renforcer notre hypothèse de dysfonctionnement du radar, nous avons réalisé une expérience supplémentaire. Nous avons utilisé un module de communication CAN qui peut envoyer des messages à un BUS CAN. Pour envoyer ces messages, nous avons écrit un script en utilisant une bibliothèque C++ open source spécifique au microprocesseur que nous avons utilisé, plus précisément un ESP8266. Nous avons pu configurer correctement un simple CAN BUS en utilisant les pilotes Linux socketCAN intégrés. Voici une image de la configuration finale :
  
 ![CANUSBsimpleSetup](https://github.com/LiamKaist/TricycleResearch/assets/117256858/63c3bfba-daea-49d8-a666-00e248d66d73)
 
-This experiment enabled me to check whether I had fundamentally misunderstood a concept of CAN BUS configuration. I came to the conclusion that the radar is still at the centre of the issue. 
-The CAN standard messages were transferred seamlessly, I could send messages to the BUS and listen to the messages being sent on it, simultaneously. Here is the output of the candump (Utility that displays CAN messages in their human readable format. 
+Cette expérience nous a permis de vérifier si nous n'avions pas fondamentalement mal compris un concept de configuration du CAN BUS. Nous en sommes arrivé à la conclusion que le radar est toujours au centre du problème. 
+Les messages standard CAN ont été transférés sans problème, nous avons pu envoyer des messages au BUS et écouter les messages qui y étaient envoyés, simultanément. Voici la sortie du candump (Utilitaire qui affiche les messages CAN dans leur format lisible par l'homme. 
  
 ![CANDump](https://github.com/LiamKaist/TricycleResearch/assets/117256858/9bec96fe-8b18-4ed4-889a-4ed96711af75)
 
-## Results/Conclusion :
-The only conclusion I have managed to come up with , after all this research, is that there is a problem with the Radar itself. It does not send any information whatsoever, whether we test it indoors or outdoors. 
+## Conclusion :
+La seule conclusion à laquelle nous sommes parvenu, après toutes ces recherches, est qu'il y a un problème avec le radar lui-même. Il n'envoie aucune information, que nous le testions à l'intérieur ou à l'extérieur. 
 
