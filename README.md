@@ -1,6 +1,6 @@
 # Tricycle Autonome
 
-# Présentation
+## Présentation
 
 Le projet consiste en l'interconnexion de différents capteurs que sont le LiDAR, le Radar, le GPS, la Caméra et les Ultrasons
 et l'utilisation de ROS 2 pour rendre autonome un tricycle présent à l'INSA de Toulouse.
@@ -21,9 +21,9 @@ Nos tuteurs étaient :
 - Sébastien DI MERCURIO 
 - Avec l'aide d'Abdou Rahamane BOUBACAR ALZOUMA
 
-# Prérequis
+## Prérequis
 Pour réaliser notre projet, il faut tout d'abord pouvoir installer ROS 2 Humble sur Ubuntu 22.04. Un tutoriel est disponible sur la page suivante : https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
 
-# Contenu
+## Contenu
 
 Ce GitHUB est fait de la façon suivante. Un dossier source regroupe tous les capteurs. Dans chaque dossier de capteur sera présent le package pour faire fonctionner le capteur ainsi qu'une explication pour commennt l'utiliser. Une documentation est également présente pour tous les capteurs
