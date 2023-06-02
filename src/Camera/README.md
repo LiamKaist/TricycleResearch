@@ -1,6 +1,6 @@
 Pour pouvoir utiliser la caméra, nous avons installé un driver pour les caméras de type v4l. Voir la suite pour le guide d'installation.
 
-Read https://index.ros.org/r/usb_cam 
+Lisez https://index.ros.org/r/usb_cam 
 
 1/ Installation de v4l-utils avec la commande suivante:
 
@@ -32,7 +32,9 @@ v4l2-ctl --list-devices
 
 Pour lancer le package ROS, exécutez simplement la commande suivante :
 
+```
 ros2 launch usb_cam demo_launch.py
+```
 
 Si tout se passe bien, une fenêtre s'ouvre avec le retour de la caméra.
 
