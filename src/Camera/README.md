@@ -16,7 +16,7 @@ v4l2-ctl --list-devices
 Assurez vous que la caméra est présente dans cette liste.
 
 Ensuite, il faut installer le DRIVER/Pilote suivant (driver pour ros2_humble) :
-sudo apt-get install ros-humble-usb-cam
+`sudo apt-get install ros-humble-usb-cam`
 
 3/ Modification des paramètres :
 
