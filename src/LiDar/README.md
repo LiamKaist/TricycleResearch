@@ -19,7 +19,7 @@ Maintenant, il faut pouvoir récupérer et afficher les données reçues sur un 
   
 ## Mise place / Software
   
-Pour faire marcher le rs_lidar_ws qui permet de récupérer les données du Lidar et les afficher sur RVIZ, il faut suivre la procédure suivante:  
+Pour faire marcher le rs_lidar_ws qui permet de récupérer les données du Lidar et les afficher sur RVIZ, il faut suivre la procédure suivante :  
 *(Prérequis : Une version de ROS2 (La notre étant ROS2 Humble))*
   
 __rs_lidar_ws__ est un Workspace ROS2 récupéré sur le GitHub suivant => [GitHub](https://github.com/RoboSense-LiDAR/rslidar_sdk/blob/main/doc/howto), il permet de faire fonctionner le LiDAR.
@@ -30,11 +30,10 @@ Pour visualiser les données du LiDAR avec Rviz il faut que vous ayez installé 
 [Installation Rviz](https://installati.one/install-rviz-ubuntu-22-04/).
  
 Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante :  
-`source /opt/ros/foxy/setup.bash `. 
-Cela va permettre d'utiliser les fonctionnalités ROS2.
+`source /opt/ros/foxy/setup.bash `.
   
 Ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande :  
-`source setup.bash`
+`source setup.bash`. 
 Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante :
 `ros2 launch rslidar_sdk start.py`
   
