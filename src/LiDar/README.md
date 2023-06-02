@@ -22,7 +22,7 @@ Maintenant, il faut pouvoir récupérer et afficher les données reçues sur un 
 Pour faire marcher le rs_lidar_ws qui permet de récupérer les données du Lidar et les afficher sur RVIZ, il faut suivre la procédure suivante :  
 *(Prérequis : Une version de ROS2 (La notre étant ROS2 Humble))*
   
-__rs_lidar_ws__ est un Workspace ROS2 récupéré sur le GitHub suivant => [GitHub](https://github.com/RoboSense-LiDAR/rslidar_sdk/blob/main/doc/howto), il permet de faire fonctionner le LiDAR.
+__rs_lidar_ws__ est un Workspace ROS2 récupéré sur le GitHub suivant => [GitHub](https://github.com/RoboSense-LiDAR/rslidar_sdk/tree/main), il permet de faire fonctionner le LiDAR.
   
 __rs_customlidar_ws__ est un workspace ROS2 créé par Liam CHRISMENT, il permet de s'abonner aux topics créés par rs_lidar_sdk afin de récupérer les données que l'on souhaite, de manière directe.
   
@@ -40,15 +40,15 @@ Si vous ne voyez rien sur Rviz, c'est que le fichier de configuration de rs_lida
 Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar utilisé (Nous avons mis `lidar_type : RS16`, car notre LiDAR est le LiDAR 16 couches RoboSense).
 
 Après avoir lancé ce node, vous pouvez lancer le node fourni dans rs_custom_lidar.
-Pour cela il vous faudra "sourcer" le fichier setup.bash dans le répertoire ros2_custom_lidar :  
-  `source setup.bash`
+Pour cela il vous faudra "sourcer" le fichier setup.bash dans le répertoire ros2_custom_lidar : `source setup.bash`
   
 Il faut lancer l'éxécutable (Node ROS2) nommé "lidar_data_subscriber_executable", pour cela il faut éxecuter la commande suivante :  
   `ros2 run my_cpp_pkg lidar_data_subscriber_executable`
   
 Voilà ! Ce Node ira s'abonner au topic "rslidar_points" (généré par le Node executé dans rs_lidar_ws)
-Utilisez la commande : rqtgraph (voir internet pour les paquets à installer pour avoir cette commande)
-Cette commande permet de visualiser les Nodes, les topics et autres qui s'executent sur l'ordinateur.
+
+Utilisez la commande rqtgraph pour pouvoir utiliser les nodes, les topics et autres qui s'éxecutent sur l'ordinateur. Un tutoriel d'installation et d'utilisation est diponible à l'adresse suivant : [Tutoriel rqtgraph](https://roboticsbackend.com/rqt-graph-visualize-and-debug-your-ros-graph/)
+
   
 
 
