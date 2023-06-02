@@ -1,0 +1,62 @@
+[35m[1mConsolidate compiler generated dependencies of target radar_conti_ars408_component[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o[0m
+In file included from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+                 from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+   43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+      | 
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+      | 
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_shutdown(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:68:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   68 |   [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:76:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   76 |     [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX shared library libradar_conti_ars408_component.so[0m
+[ 50%] Built target radar_conti_ars408_component
+[ 75%] [32mBuilding CXX object CMakeFiles/radar_conti_ars408_composition.dir/src/radar_conti_ars408_composition.cpp.o[0m
+In file included from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+                 from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_composition.cpp:16[m[K:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+   43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+      | 
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+      | 
+[100%] [32m[1mLinking CXX executable radar_conti_ars408_composition[0m
+[100%] Built target radar_conti_ars408_composition
+-- Install configuration: "Release"
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/environment/library_path.sh
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/environment/library_path.dsv
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/lib/radar_conti_ars408/radar_conti_ars408_composition
+-- Set runtime path of "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/lib/radar_conti_ars408/radar_conti_ars408_composition" to ""
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/lib/libradar_conti_ars408_component.so
+-- Set runtime path of "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/lib/libradar_conti_ars408_component.so" to ""
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/include/radar_conti_ars408/
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/include/radar_conti_ars408//visibility_control.h
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/include/radar_conti_ars408//ars_408_can_defines.h
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/include/radar_conti_ars408//radar_conti_ars408_component.hpp
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/resources
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/resources/low_poly_911.dae
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/launch
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/launch/radar.launch.py
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/ament_index/resource_index/package_run_dependencies/radar_conti_ars408
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/ament_index/resource_index/parent_prefix_path/radar_conti_ars408
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/environment/ament_prefix_path.sh
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/environment/ament_prefix_path.dsv
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/environment/path.sh
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/environment/path.dsv
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/local_setup.bash
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/local_setup.sh
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/local_setup.zsh
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/local_setup.dsv
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/package.dsv
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/ament_index/resource_index/packages/radar_conti_ars408
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/ament_index/resource_index/rclcpp_components/radar_conti_ars408
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/cmake/radar_conti_ars408Config.cmake
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/cmake/radar_conti_ars408Config-version.cmake
+-- Installing: /home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/install/radar_conti_ars408/share/radar_conti_ars408/package.xml

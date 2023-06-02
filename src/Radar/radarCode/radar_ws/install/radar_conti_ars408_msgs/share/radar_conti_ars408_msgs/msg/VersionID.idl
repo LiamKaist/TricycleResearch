@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/VersionID.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "std_msgs/msg/Int32.idl"
+#include "std_msgs/msg/String.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       VersionID" "\n"
+      "Id:         0x700" "\n"
+      "Length:     4 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Version_MajorRelease" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<-----------------------------x|" "\n"
+      "   B     +---+---+---+---+---+---+---+---+" "\n"
+      "   y                                   +-- Version_MinorRelease" "\n"
+      "   t     +---+---+---+---+---+---+---+---+" "\n"
+      "   e   2 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Version_PatchLevel" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       3 |   |   |   |   |   |   |<-x|<-x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                   |   +-- Version_CountryCode" "\n"
+      "                                   +-- Version_ExtendedRange" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- Version_MajorRelease" "\n"
+      "     +-- Version_MinorRelease" "\n"
+      "     +-- Version_PatchLevel" "\n"
+      "     +-- Version_ExtendedRange" "\n"
+      "     +-- Version_CountryCode" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct VersionID {
+      std_msgs::msg::Header header;
+
+      std_msgs::msg::Int32 version_majorrelease;
+
+      std_msgs::msg::Int32 version_minorrelease;
+
+      std_msgs::msg::Int32 version_patchlevel;
+
+      std_msgs::msg::String version_extendedrange;
+
+      std_msgs::msg::String version_countrycode;
+    };
+  };
+};

@@ -1,0 +1,60 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/ClusterStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Int32.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       Cluster_0_Status" "\n"
+      "Id:         0x600" "\n"
+      "Length:     5 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Cluster_NofClustersNear" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "   B                                   +-- Cluster_NofClustersFar" "\n"
+      "   y     +---+---+---+---+---+---+---+---+" "\n"
+      "   t   2 |<------------------------------|" "\n"
+      "   e     +---+---+---+---+---+---+---+---+" "\n"
+      "       3 |------------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Cluster_MeasCounter" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       4 |<-------------x|   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                       +-- Cluster_InterfaceVersion" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- Cluster_NofClustersNear" "\n"
+      "     +-- Cluster_NofClustersFar" "\n"
+      "     +-- Cluster_MeasCounter" "\n"
+      "     +-- Cluster_InterfaceVersion" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct ClusterStatus {
+      std_msgs::msg::Int32 cluster_nofclustersnear;
+
+      std_msgs::msg::Int32 cluster_nofclustersfar;
+
+      std_msgs::msg::Int32 cluster_meascounter;
+
+      std_msgs::msg::Int32 cluster_interfaceversion;
+    };
+  };
+};

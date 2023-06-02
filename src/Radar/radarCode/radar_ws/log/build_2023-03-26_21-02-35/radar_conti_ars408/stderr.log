@@ -1,0 +1,24 @@
+In file included from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+                 from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+   43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+      | 
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+      | 
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_shutdown(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:68:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   68 |   [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:76:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   76 |     [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+                 from [01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/radar_conti_ars408_composition.cpp:16[m[K:
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+   43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+      | 
+[01m[K/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+      | 

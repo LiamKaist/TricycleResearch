@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000148] (can_msgs) JobQueued: {'identifier': 'can_msgs', 'dependencies': OrderedDict([('can_msgs', '/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/ros2_socketcan_bridge/install/can_msgs')])}
+[0.000801] (ros2socketcan_bridge) JobQueued: {'identifier': 'ros2socketcan_bridge', 'dependencies': OrderedDict([('can_msgs', '/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/ros2_socketcan_bridge/install/can_msgs'), ('ros2socketcan_bridge', '/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/ros2_socketcan_bridge/install/ros2socketcan_bridge')])}
+[0.000848] (can_msgs) JobStarted: {'identifier': 'can_msgs'}
+[0.035679] (can_msgs) JobEnded: {'identifier': 'can_msgs', 'rc': 0}
+[0.038297] (ros2socketcan_bridge) JobStarted: {'identifier': 'ros2socketcan_bridge'}
+[0.058286] (ros2socketcan_bridge) JobEnded: {'identifier': 'ros2socketcan_bridge', 'rc': 0}
+[0.058809] (-) EventReactorShutdown: {}

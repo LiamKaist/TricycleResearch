@@ -1,0 +1,79 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/ObjectGeneral.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64.idl"
+#include "std_msgs/msg/String.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       Obj_1_General" "\n"
+      "Id:         0x60b" "\n"
+      "Length:     8 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Obj_ID" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       2 |------------------x|<----------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                           +-- Obj_DistLong" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       3 |------------------------------x|" "\n"
+      "   B     +---+---+---+---+---+---+---+---+" "\n"
+      "   y                                   +-- Obj_DistLat" "\n"
+      "   t     +---+---+---+---+---+---+---+---+" "\n"
+      "   e   4 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       5 |------x|<----------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               +-- Obj_VrelLong" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       6 |----------x|   |   |<---------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                   |                   +-- Obj_DynProp" "\n"
+      "                   +-- Obj_VrelLat" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       7 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Obj_RCS" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- Obj_ID" "\n"
+      "     +-- Obj_DistLong" "\n"
+      "     +-- Obj_DistLat" "\n"
+      "     +-- Obj_VrelLong" "\n"
+      "     +-- Obj_VrelLat" "\n"
+      "     +-- Obj_DynProp" "\n"
+      "     +-- Obj_RCS" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct ObjectGeneral {
+      std_msgs::msg::Float64 obj_distlong;
+
+      std_msgs::msg::Float64 obj_distlat;
+
+      std_msgs::msg::Float64 obj_vrellong;
+
+      std_msgs::msg::Float64 obj_vrellat;
+
+      std_msgs::msg::String obj_dynprop;
+
+      std_msgs::msg::Float64 obj_rcs;
+    };
+  };
+};

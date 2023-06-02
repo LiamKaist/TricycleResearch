@@ -1,0 +1,79 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/ObjectExtended.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64.idl"
+#include "std_msgs/msg/String.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       Obj_3_Extended" "\n"
+      "Id:         0x60d" "\n"
+      "Length:     8 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Obj_ID" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       2 |----------x|<------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                   +-- Obj_ArelLong" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       3 |--------------x|   |<---------x|" "\n"
+      "   B     +---+---+---+---+---+---+---+---+" "\n"
+      "   y                   |               +-- Obj_Class" "\n"
+      "   t                   +-- Obj_ArelLat" "\n"
+      "   e     +---+---+---+---+---+---+---+---+" "\n"
+      "       4 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       5 |------x|   |   |   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               +-- Obj_OrientationAngle" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       6 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Obj_Length" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       7 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Obj_Width" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- Obj_ID" "\n"
+      "     +-- Obj_ArelLong" "\n"
+      "     +-- Obj_ArelLat" "\n"
+      "     +-- Obj_Class" "\n"
+      "     +-- Obj_OrientationAngle" "\n"
+      "     +-- Obj_Length" "\n"
+      "     +-- Obj_Width" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct ObjectExtended {
+      std_msgs::msg::Float64 obj_arellong;
+
+      std_msgs::msg::Float64 obj_arellat;
+
+      std_msgs::msg::String obj_class;
+
+      std_msgs::msg::Float64 obj_orientationangle;
+
+      std_msgs::msg::Float64 obj_length;
+
+      std_msgs::msg::Float64 obj_width;
+    };
+  };
+};

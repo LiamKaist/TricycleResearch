@@ -1,0 +1,6 @@
+{
+  "package_name": "can_msgs",
+  "non_idl_tuples": [
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/ros2_socketcan_bridge/can_msgs:msg/Frame.msg"
+  ]
+}

@@ -1,0 +1,86 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/FilterStateCfg.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "std_msgs/msg/UInt8.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    struct FilterStateCfg {
+      std_msgs::msg::Header header;
+
+      std_msgs::msg::UInt8 filtercfg_valid;
+
+      std_msgs::msg::UInt8 filtercfg_active;
+
+      std_msgs::msg::UInt8 filtercfg_index;
+
+      std_msgs::msg::UInt8 filtercfg_type;
+
+      std_msgs::msg::UInt8 filtercfg_min_nofobj;
+
+      std_msgs::msg::UInt8 filtercfg_min_distance;
+
+      std_msgs::msg::UInt8 filtercfg_min_azimuth;
+
+      std_msgs::msg::UInt8 filtercfg_min_vreloncome;
+
+      std_msgs::msg::UInt8 filtercfg_min_vreldepart;
+
+      std_msgs::msg::UInt8 filtercfg_min_rcs;
+
+      std_msgs::msg::UInt8 filtercfg_min_lifetime;
+
+      std_msgs::msg::UInt8 filtercfg_min_size;
+
+      std_msgs::msg::UInt8 filtercfg_min_probexists;
+
+      std_msgs::msg::UInt8 filtercfg_min_y;
+
+      std_msgs::msg::UInt8 filtercfg_min_x;
+
+      std_msgs::msg::UInt8 filtercfg_min_vyrightleft;
+
+      std_msgs::msg::UInt8 filtercfg_min_vxoncome;
+
+      std_msgs::msg::UInt8 filtercfg_min_vyleftright;
+
+      std_msgs::msg::UInt8 filtercfg_min_vxdepart;
+
+      std_msgs::msg::UInt8 filtercfg_min_object_class;
+
+      std_msgs::msg::UInt8 filtercfg_max_nofobj;
+
+      std_msgs::msg::UInt8 filtercfg_max_distance;
+
+      std_msgs::msg::UInt8 filtercfg_max_azimuth;
+
+      std_msgs::msg::UInt8 filtercfg_max_vreloncome;
+
+      std_msgs::msg::UInt8 filtercfg_max_vreldepart;
+
+      std_msgs::msg::UInt8 filtercfg_max_rcs;
+
+      std_msgs::msg::UInt8 filtercfg_max_lifetime;
+
+      std_msgs::msg::UInt8 filtercfg_max_size;
+
+      std_msgs::msg::UInt8 filtercfg_max_probexists;
+
+      std_msgs::msg::UInt8 filtercfg_max_y;
+
+      std_msgs::msg::UInt8 filtercfg_max_x;
+
+      std_msgs::msg::UInt8 filtercfg_max_vyrightleft;
+
+      std_msgs::msg::UInt8 filtercfg_max_vxoncome;
+
+      std_msgs::msg::UInt8 filtercfg_max_vyleftright;
+
+      std_msgs::msg::UInt8 filtercfg_max_vxdepart;
+
+      std_msgs::msg::UInt8 filtercfg_max_object_class;
+    };
+  };
+};

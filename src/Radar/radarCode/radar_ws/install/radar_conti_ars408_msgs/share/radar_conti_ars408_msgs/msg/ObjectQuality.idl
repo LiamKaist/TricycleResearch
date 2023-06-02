@@ -1,0 +1,90 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/ObjectQuality.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64.idl"
+#include "std_msgs/msg/String.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       Obj_2_Quality" "\n"
+      "Id:         0x60c" "\n"
+      "Length:     7 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Obj_ID" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<-----------------x|<----------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                           +-- Obj_DistLong_rms" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       2 |------x|<-----------------x|<--|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               |                   +-- Obj_VrelLong_rms" "\n"
+      "               +-- Obj_DistLat_rms" "\n"
+      "   B     +---+---+---+---+---+---+---+---+" "\n"
+      "   y   3 |--------------x|<--------------|" "\n"
+      "   t     +---+---+---+---+---+---+---+---+" "\n"
+      "   e                   +-- Obj_VrelLat_rms" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       4 |--x|<-----------------x|<------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "           |                   +-- Obj_ArelLat_rms" "\n"
+      "           +-- Obj_ArelLong_rms" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       5 |----------x|   |   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                   +-- Obj_Orientation_rms" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       6 |<---------x|<---------x|   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                   |           +-- Obj_MeasState" "\n"
+      "                   +-- Obj_ProbOfExist" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- Obj_ID" "\n"
+      "     +-- Obj_DistLong_rms" "\n"
+      "     +-- Obj_DistLat_rms" "\n"
+      "     +-- Obj_VrelLong_rms" "\n"
+      "     +-- Obj_VrelLat_rms" "\n"
+      "     +-- Obj_ArelLong_rms" "\n"
+      "     +-- Obj_ArelLat_rms" "\n"
+      "     +-- Obj_Orientation_rms" "\n"
+      "     +-- Obj_ProbOfExist" "\n"
+      "     +-- Obj_MeasState" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct ObjectQuality {
+      std_msgs::msg::Float64 obj_distlong_rms;
+
+      std_msgs::msg::Float64 obj_distlat_rms;
+
+      std_msgs::msg::Float64 obj_vrellong_rms;
+
+      std_msgs::msg::Float64 obj_vrellat_rms;
+
+      std_msgs::msg::Float64 obj_arellong_rms;
+
+      std_msgs::msg::Float64 obj_arellat_rms;
+
+      std_msgs::msg::Float64 obj_orientation_rms;
+
+      std_msgs::msg::Float64 obj_probofexist;
+
+      std_msgs::msg::String obj_measstate;
+    };
+  };
+};

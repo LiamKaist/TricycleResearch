@@ -1,0 +1,9 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/ros2_socketcan_bridge/install/can_msgs/local/lib/python3.10/dist-packages",
+        "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-WS/ros2_socketcan_bridge/install/can_msgs/local/lib/python3.10/dist-packages",
+        "/home/lilultime/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

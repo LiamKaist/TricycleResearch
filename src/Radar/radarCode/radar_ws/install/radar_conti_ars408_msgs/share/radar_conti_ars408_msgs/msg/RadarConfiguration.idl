@@ -1,0 +1,135 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/RadarConfiguration.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "std_msgs/msg/UInt8.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       RadarConfiguration" "\n"
+      "Id:         0x200" "\n"
+      "Length:     8 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ExternalUnit" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-x|<-x|<-x|<-x|<-x|<-x|<-x|<-x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "           |   |   |   |   |   |   |   +-- RadarCfg_MaxDistance_valid" "\n"
+      "           |   |   |   |   |   |   +-- RadarCfg_SensorID_valid" "\n"
+      "           |   |   |   |   |   +-- RadarCfg_RadarPower_valid" "\n"
+      "           |   |   |   |   +-- RadarCfg_OutputType_valid" "\n"
+      "           |   |   |   +-- RadarCfg_SendQuality_valid" "\n"
+      "           |   |   +-- RadarCfg_SendExtInfo_valid" "\n"
+      "           |   +-- RadarCfg_SortIndex_valid" "\n"
+      "           +-- RadarCfg_StoreInNVM_valid" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       2 |------x|   |   |   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               +-- RadarCfg_MaxDistance" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       3 |   |   |   |   |   |   |   |   |" "\n"
+      "   B     +---+---+---+---+---+---+---+---+" "\n"
+      "   y   4 |<---------x|<-----x|<---------x|" "\n"
+      "   t     +---+---+---+---+---+---+---+---+" "\n"
+      "   e               |       |           +-- RadarCfg_SensorID" "\n"
+      "                   |       +-- RadarCfg_OutputType" "\n"
+      "                   +-- RadarCfg_RadarPower" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       5 |<-x|<---------x|<-x|<-x|<-x|<-x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "           |           |   |   |   |   +-- RadarCfg_CtrlRelay_valid" "\n"
+      "           |           |   |   |   +-- RadarCfg_CtrlRelay" "\n"
+      "           |           |   |   +-- RadarCfg_SendQuality" "\n"
+      "           |           |   +-- RadarCfg_SendExtInfo" "\n"
+      "           |           +-- RadarCfg_SortIndex" "\n"
+      "           +-- RadarCfg_StoreInNVM" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       6 |   |   |   |   |<---------x|<-x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                   |   +-- RadarCfg_RCS_Threshold_valid" "\n"
+      "                                   +-- RadarCfg_RCS_Threshold" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       7 |   |   |   |   |   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- RadarCfg_StoreInNVM_valid" "\n"
+      "     +-- RadarCfg_SortIndex_valid" "\n"
+      "     +-- RadarCfg_SendExtInfo_valid" "\n"
+      "     +-- RadarCfg_SendQuality_valid" "\n"
+      "     +-- RadarCfg_OutputType_valid" "\n"
+      "     +-- RadarCfg_RadarPower_valid" "\n"
+      "     +-- RadarCfg_SensorID_valid" "\n"
+      "     +-- RadarCfg_MaxDistance_valid" "\n"
+      "     +-- RadarCfg_MaxDistance" "\n"
+      "     +-- RadarCfg_RadarPower" "\n"
+      "     +-- RadarCfg_OutputType" "\n"
+      "     +-- RadarCfg_SensorID" "\n"
+      "     +-- RadarCfg_StoreInNVM" "\n"
+      "     +-- RadarCfg_SortIndex" "\n"
+      "     +-- RadarCfg_SendExtInfo" "\n"
+      "     +-- RadarCfg_SendQuality" "\n"
+      "     +-- RadarCfg_CtrlRelay" "\n"
+      "     +-- RadarCfg_CtrlRelay_valid" "\n"
+      "     +-- RadarCfg_RCS_Threshold" "\n"
+      "     +-- RadarCfg_RCS_Threshold_valid" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct RadarConfiguration {
+      std_msgs::msg::Header header;
+
+      std_msgs::msg::UInt8 radarcfg_storeinnvm_valid;
+
+      std_msgs::msg::UInt8 radarcfg_sortindex_valid;
+
+      std_msgs::msg::UInt8 radarcfg_sendextinfo_valid;
+
+      std_msgs::msg::UInt8 radarcfg_sendquality_valid;
+
+      std_msgs::msg::UInt8 radarcfg_outputtype_valid;
+
+      std_msgs::msg::UInt8 radarcfg_radarpower_valid;
+
+      std_msgs::msg::UInt8 radarcfg_sensorid_valid;
+
+      std_msgs::msg::UInt8 radarcfg_maxdistance_valid;
+
+      std_msgs::msg::UInt8 radarcfg_maxdistance;
+
+      std_msgs::msg::UInt8 radarcfg_radarpower;
+
+      std_msgs::msg::UInt8 radarcfg_outputtype;
+
+      std_msgs::msg::UInt8 radarcfg_sensorid;
+
+      std_msgs::msg::UInt8 radarcfg_storeinnvm;
+
+      std_msgs::msg::UInt8 radarcfg_sortindex;
+
+      std_msgs::msg::UInt8 radarcfg_sendextinfo;
+
+      std_msgs::msg::UInt8 radarcfg_sendquality;
+
+      std_msgs::msg::UInt8 radarcfg_ctrlrelay;
+
+      std_msgs::msg::UInt8 radarcfg_ctrlrelay_valid;
+
+      std_msgs::msg::UInt8 radarcfg_rcs_threshold;
+
+      std_msgs::msg::UInt8 radarcfg_rcs_threshold_valid;
+    };
+  };
+};

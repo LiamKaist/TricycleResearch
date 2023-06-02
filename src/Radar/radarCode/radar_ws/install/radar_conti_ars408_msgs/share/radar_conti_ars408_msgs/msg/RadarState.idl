@@ -1,0 +1,122 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/RadarState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+#include "std_msgs/msg/UInt8.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       RadarState" "\n"
+      "Id:         0x201" "\n"
+      "Length:     8 bytes" "\n"
+      "Cycle time: 50 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-x|<-x|   |   |   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "           |   +-- RadarState_NVMReadStatus" "\n"
+      "           +-- RadarState_NVMwriteStatus" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       2 |------x|<-x|<-x|<-x|<-x|<-x|   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               |   |   |   |   |   +-- RadarState_Voltage_Error" "\n"
+      "               |   |   |   |   +-- RadarState_Temporary_Error" "\n"
+      "               |   |   |   +-- RadarState_Temperature_Error" "\n"
+      "               |   |   +-- RadarState_Interference" "\n"
+      "               |   +-- RadarState_Persistent_Error" "\n"
+      "               +-- RadarState_MaxDistanceCfg" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "   B   3 |   |   |   |   |   |   |<------|" "\n"
+      "   y     +---+---+---+---+---+---+---+---+" "\n"
+      "   t   4 |--x|<---------x|   |<---------x|" "\n"
+      "   e     +---+---+---+---+---+---+---+---+" "\n"
+      "           |           |               +-- RadarState_SensorID" "\n"
+      "           |           +-- RadarState_SortIndex" "\n"
+      "           +-- RadarState_RadarPowerCfg" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       5 |<-----x|<-x|<-x|<-----x|<-x|   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               |   |   |       |   +-- RadarState_CtrlRelayCfg" "\n"
+      "               |   |   |       +-- RadarState_OutputTypeCfg" "\n"
+      "               |   |   +-- RadarState_SendQualityCfg" "\n"
+      "               |   +-- RadarState_SendExtInfoCfg" "\n"
+      "               +-- RadarState_MotionRxState" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       6 |   |   |   |   |   |   |   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       7 |   |   |   |<---------x|   |   |" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                               +-- RadarState_RCS_Threshold" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- RadarState_NVMwriteStatus" "\n"
+      "     +-- RadarState_NVMReadStatus" "\n"
+      "     +-- RadarState_MaxDistanceCfg" "\n"
+      "     +-- RadarState_Persistent_Error" "\n"
+      "     +-- RadarState_Interference" "\n"
+      "     +-- RadarState_Temperature_Error" "\n"
+      "     +-- RadarState_Temporary_Error" "\n"
+      "     +-- RadarState_Voltage_Error" "\n"
+      "     +-- RadarState_RadarPowerCfg" "\n"
+      "     +-- RadarState_SortIndex" "\n"
+      "     +-- RadarState_SensorID" "\n"
+      "     +-- RadarState_MotionRxState" "\n"
+      "     +-- RadarState_SendExtInfoCfg" "\n"
+      "     +-- RadarState_SendQualityCfg" "\n"
+      "     +-- RadarState_OutputTypeCfg" "\n"
+      "     +-- RadarState_CtrlRelayCfg" "\n"
+      "     +-- RadarState_RCS_Threshold" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct RadarState {
+      std_msgs::msg::Header header;
+
+      std_msgs::msg::UInt8 radarstate_nvmwritestatus;
+
+      std_msgs::msg::UInt8 radarstate_nvmreadstatus;
+
+      std_msgs::msg::UInt8 radarstate_maxdistancecfg;
+
+      std_msgs::msg::UInt8 radarstate_persistent_error;
+
+      std_msgs::msg::UInt8 radarstate_interference;
+
+      std_msgs::msg::UInt8 radarstate_temperature_error;
+
+      std_msgs::msg::UInt8 radarstate_temporary_error;
+
+      std_msgs::msg::UInt8 radarstate_voltage_error;
+
+      std_msgs::msg::UInt8 radarstate_radarpowercfg;
+
+      std_msgs::msg::UInt8 radarstate_sortindex;
+
+      std_msgs::msg::UInt8 radarstate_sensorid;
+
+      std_msgs::msg::UInt8 radarstate_motionrxstate;
+
+      std_msgs::msg::UInt8 radarstate_sendextinfocfg;
+
+      std_msgs::msg::UInt8 radarstate_sendqualitycfg;
+
+      std_msgs::msg::UInt8 radarstate_outputtypecfg;
+
+      std_msgs::msg::UInt8 radarstate_ctrlrelaycfg;
+
+      std_msgs::msg::UInt8 radarstate_rcs_threshold;
+    };
+  };
+};

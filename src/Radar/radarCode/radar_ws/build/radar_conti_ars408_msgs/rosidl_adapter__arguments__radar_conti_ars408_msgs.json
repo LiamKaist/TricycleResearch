@@ -1,0 +1,22 @@
+{
+  "package_name": "radar_conti_ars408_msgs",
+  "non_idl_tuples": [
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ClusterGeneral.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ClusterQuality.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ClusterStatus.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ObjectGeneral.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ObjectExtended.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ObjectQuality.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ObjectStatus.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/RadarConfiguration.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/RadarState.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/VersionID.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/Cluster.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/Object.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ClusterList.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/ObjectList.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/FilterStateCfg.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/FilterCfg.msg",
+    "/home/lilultime/External_Ros2_Projects/autowareclass2020/code/src/09_Perception_Radar/Radar-Hands-On-Solution-WS/radar_conti_ars408_msgs:msg/FilterStateHeader.msg"
+  ]
+}

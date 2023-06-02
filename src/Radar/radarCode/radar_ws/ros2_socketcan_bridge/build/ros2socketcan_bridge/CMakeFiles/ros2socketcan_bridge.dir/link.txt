@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros2socketcan_bridge.a 
+/usr/bin/ranlib libros2socketcan_bridge.a

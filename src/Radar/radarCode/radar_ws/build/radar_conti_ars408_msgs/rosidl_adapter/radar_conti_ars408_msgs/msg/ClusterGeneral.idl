@@ -1,0 +1,79 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from radar_conti_ars408_msgs/msg/ClusterGeneral.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64.idl"
+#include "std_msgs/msg/Int32.idl"
+
+module radar_conti_ars408_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "------------------------------------------------------------------------" "\n"
+      "" "\n"
+      "Name:       Cluster_1_General" "\n"
+      "Id:         0x701" "\n"
+      "Length:     8 bytes" "\n"
+      "Cycle time: 0 ms" "\n"
+      "Senders:    ARS_ISF" "\n"
+      "Layout:" "\n"
+      "" "\n"
+      "                        Bit" "\n"
+      "" "\n"
+      "           7   6   5   4   3   2   1   0" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       0 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Cluster_ID" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       1 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       2 |------------------x|   |<------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                           +-- Cluster_DistLong" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       3 |------------------------------x|" "\n"
+      "   B     +---+---+---+---+---+---+---+---+" "\n"
+      "   y                                   +-- Cluster_DistLat" "\n"
+      "   t     +---+---+---+---+---+---+---+---+" "\n"
+      "   e   4 |<------------------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       5 |------x|<----------------------|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "               +-- Cluster_VrelLong" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       6 |----------x|   |   |<---------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                   |                   +-- Cluster_DynProp" "\n"
+      "                   +-- Cluster_VrelLat" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "       7 |<-----------------------------x|" "\n"
+      "         +---+---+---+---+---+---+---+---+" "\n"
+      "                                       +-- Cluster_RCS" "\n"
+      "" "\n"
+      "Signal tree:" "\n"
+      "" "\n"
+      "  -- {root}" "\n"
+      "     +-- Cluster_ID" "\n"
+      "     +-- Cluster_DistLong" "\n"
+      "     +-- Cluster_DistLat" "\n"
+      "     +-- Cluster_VrelLong" "\n"
+      "     +-- Cluster_VrelLat" "\n"
+      "     +-- Cluster_DynProp" "\n"
+      "     +-- Cluster_RCS" "\n"
+      "" "\n"
+      "------------------------------------------------------------------------")
+    struct ClusterGeneral {
+      std_msgs::msg::Float64 cluster_distlong;
+
+      std_msgs::msg::Float64 cluster_distlat;
+
+      std_msgs::msg::Float64 cluster_vrellong;
+
+      std_msgs::msg::Float64 cluster_vrellat;
+
+      std_msgs::msg::Int32 cluster_dynprop;
+
+      std_msgs::msg::Float64 cluster_rcs;
+    };
+  };
+};
