@@ -9,7 +9,7 @@ Alors vous voulez faire fonctionner le LiDAR ? Venez ici que je vous guide !
 
 Tout d'abord, sortez le LiDAR de sa boîte et alimentez le en 12V grâce à l'adaptateur fourni par le constructeur.
 Ensuite, connectez un ordinateur sur lequel se trouve une version de ROS2 (Dans notre cas, nous utilisions Humble avec Ubuntu 22.04 Jammy Jellyfish) en utilisant le câble Ethernet fourni et le reliant à l'adaptateur. Il servira ainsi de Switch Ethernet.
-Le LiDAR envoie ses données à l'adresse IP 192.168.1.102, il faut s'assurer que l'adresse IP associée à l'une de vos interfaces Ethernet soit configurée avec cette adresse. ('''ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0''' , commande utilisée sur Linux)
+Le LiDAR envoie ses données à l'adresse IP 192.168.1.102, il faut s'assurer que l'adresse IP associée à l'une de vos interfaces Ethernet soit configurée avec cette adresse. ("ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0" , commande utilisée sur Linux)
 Maintenant, il faut pouvoir récupérer et afficher les données reçues sur un terminal ou ROS2. Voir la partie Software ci-dessous!
   
 
