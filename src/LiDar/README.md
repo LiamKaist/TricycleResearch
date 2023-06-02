@@ -6,6 +6,7 @@ Le LiDAR que nous possédons est un LiDAR 16 couches réalisé par la société 
 # Mise en place / Hardware
   
 Alors vous voulez faire fonctionner le LiDAR ? Venez ici que je vous guide !
+
 Tout d'abord, sortez le LiDAR de sa boîte et alimentez le en 12V grâce à l'adaptateur fourni par le constructeur.
 Ensuite, connectez un ordinateur sur lequel se trouve une version de ROS2 (Dans notre cas, nous utilisions Humble avec Ubuntu 22.04 Jammy Jellyfish) en utilisant le câble Ethernet fourni et le reliant à l'adaptateur. Il servira ainsi de Switch Ethernet.
 Le LiDAR envoie ses données à l'adresse IP 192.168.1.102, il faut s'assurer que l'adresse IP associée à l'une de vos interfaces Ethernet soit configurée avec cette adresse. (ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0 , commande utilisée sur Linux)
@@ -20,7 +21,8 @@ rs_lidar_ws est un Workspace ROS2 récupéré sur le github suivant => https://g
 rs_customlidar_ws est un workspace ROS2 créé par Liam CHRISMENT, il permet de s'abonner au topic créé par rs_lidar_sdk afin de récupérer les données que l'on souhaite, de manière directe.
   
 Pour visualiser les données du LiDAR avec Rviz:
-Il faut que vous ayez installé Rviz. Un tutoriel est disponible a l'adresse suivant : https://installati.one/install-rviz-ubuntu-22-04/
+Il faut que vous ayez installé Rviz. Un tutoriel est disponible a l'adresse suivant : https://installati.one/install-rviz-ubuntu-22-04/.
+ 
 Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante (pour pouvoir utiliser les fonctionnalités de ROS2), ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande : 
 Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante:
 ros2 launch rslidar_sdk start.py
