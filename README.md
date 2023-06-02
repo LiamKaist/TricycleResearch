@@ -26,4 +26,4 @@ Pour réaliser notre projet, il faut tout d'abord pouvoir installer ROS 2 Humble
 
 ## Contenu
 
-Ce GitHUB est fait de la façon suivante. Un dossier source regroupe tous les capteurs. Dans chaque dossier de capteur sera présent le package pour faire fonctionner le capteur ainsi qu'une explication pour commennt l'utiliser. Une documentation est également présente pour tous les capteurs
+Ce GitHub est fait de la façon suivante. Un dossier source regroupe tous les capteurs. Dans chaque dossier de capteur sera présent le package pour faire fonctionner le capteur ainsi qu'une explication pour commennt l'utiliser. Une documentation est également présente pour tous les capteurs
