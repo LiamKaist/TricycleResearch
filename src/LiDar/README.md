@@ -4,47 +4,26 @@
 Le LiDAR que nous possédons est un LiDAR 16 couches réalisé par la société RoboSense. C'est un capteur qui va permettre de réaliser le mapping de l'environnment en envoyant 300 000 points par seconde à 360°. Le LiDAR va envoyer dans son environnement des signaux laser. Un phénomère de réflexion va avoir lieu avec l'ensemble des éléments présents autour de lui. Un détecteur présent dand le LiDAR va alors recevoir ces signaux réfléchis et va pouvoir ainsi calculer la distance avec chaque point de l'environnement, et ainsi, créer le mapping.
 
 # Mise en place / Hardware
-Pour le mettre en place il est important de pouvoir alimenter le LiDAR à 12V comme c'est recommendé dans la datasheet. Il faut également utiliser le boitier fourni par RoboSense que l'on doit connecter avec le PC via un cable Ethernet. Ce boitier va servir de Switch Ethernet. 
-
-English: 
-Connect the Lidar to 12V (adapter provided), connect the ethernet cable to ROS2 equipped computer
-Go into your ros2_lidar_ws , make sure to source setup.bash in the install folder (or put it in a bash script that will automatically source it)
-
-According to the documentation of Robosense LiDaR 16, the LiDaR communicates with UDP to a specific IP address and Port
-
-Problem : I cannot see anything on rviz, and the lidar is correctly connected !
-
-Solution: Use sudo wireshark to check the traffic to the ethernet interface, I discovered that the lidar was looking for a specific IP address 192.168.1.102, so I had to change my computer's interface's IP address to 192.168.1.102  (ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0 according to documentation
-
-Problem: ERROR_WRONGMSOPLEN for example, nothing on RVIZ
-Make sure to check that the configuration of the rslidar_sdk provided on github is correct, in my case the Lidar selected in the config.yaml was incorrect!
-
-I had to change it to RS16 according to documentation and this github :
-  To launch the node => ros2 launch rslidar_sdk start.py
-
-
-Français : 
   
-Alors vous voulez faire fonctionner le LiDar? Venez ici que je vous guide !
-  Tout d'abord, sortez le LiDAR de sa boîte et alimentez le en 12V grâce à l'adaptateur fourni par le constructeur.
-  Ensuite, connectez un ordinateur sur lequel se trouve une version de ROS2 (Dans notre cas, nous utilisions Humble avec Ubuntu 22.04 Jammy Jellyfish) en utilisant le câble Ethernet fourni.
-  Le LiDAR envoie ses données à l'adresse IP 192.168.1.102, il faut s'assurer que l'adresse IP associée à l'une de vos interfaces Ethernet soit configurée avec cette adresse. (ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0 , commande utilisée sur Linux)
-  
-  Maintenant, il faut pouvoir récupérer et afficher les données reçues sur un terminal ou ROS2. Voir la partie Software ci-dessous!
+Alors vous voulez faire fonctionner le LiDAR ? Venez ici que je vous guide !
+Tout d'abord, sortez le LiDAR de sa boîte et alimentez le en 12V grâce à l'adaptateur fourni par le constructeur.
+Ensuite, connectez un ordinateur sur lequel se trouve une version de ROS2 (Dans notre cas, nous utilisions Humble avec Ubuntu 22.04 Jammy Jellyfish) en utilisant le câble Ethernet fourni et le reliant à l'adaptateur. Il servira ainsi de Switch Ethernet.
+Le LiDAR envoie ses données à l'adresse IP 192.168.1.102, il faut s'assurer que l'adresse IP associée à l'une de vos interfaces Ethernet soit configurée avec cette adresse. (ifconfig <name of interface> 192.168.1.102 netmask 255.255.255.0 , commande utilisée sur Linux)
+Maintenant, il faut pouvoir récupérer et afficher les données reçues sur un terminal ou ROS2. Voir la partie Software ci-dessous!
   
 
 # Mise place / Software
 Pour faire marcher le rs_lidar_ws qui permet de récupérer les données du Lidar et les afficher sur RVIZ, il faut suivre la procédure suivante:
+(Prérequis : Une version de ROS2 (La notre étant ROS2 Humble))
   
-Prérequis : Une version de ROS2 (La notre étant ROS2 Humble)
-  rs_lidar_ws est un Workspace ROS2 récupéré sur le github suivant => https://github.com/RoboSense-LiDAR/rslidar_sdk/blob/main/doc/howto
-rs_customlidar_ws : Un workspace ROS2 créé par Liam CHRISMENT , il permet de s'abonner au topic créé par rs_lidar_sdk afin de récupérer les données que l'on souhaite, de manière directe.
+rs_lidar_ws est un Workspace ROS2 récupéré sur le github suivant => https://github.com/RoboSense-LiDAR/rslidar_sdk/blob/main/doc/howto, il permet de faire fonctionner le LiDAR
+rs_customlidar_ws est un workspace ROS2 créé par Liam CHRISMENT, il permet de s'abonner au topic créé par rs_lidar_sdk afin de récupérer les données que l'on souhaite, de manière directe.
   
-Pour visualiser les données du LiDAR avec rviz:
-  Il faut que vous ayez installé rviz.
-  Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante (pour pouvoir utiliser les fonctionnalités de ROS2), ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande : 
-  Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante:
-  ros2 launch rslidar_sdk start.py
+Pour visualiser les données du LiDAR avec Rviz:
+Il faut que vous ayez installé Rviz. Un tutoriel est disponible a l'adresse suivant : https://installati.one/install-rviz-ubuntu-22-04/
+Après, il faut se placer dans le src de rs_lidar_ws et "sourcer" l'environnement ROS2 avec la commande suivante (pour pouvoir utiliser les fonctionnalités de ROS2), ensuite il vous faudra "sourcer" le fichier setup.sh contenu dans le fichier install qui se trouve dans le répertoire source de rs_lidar_ws, voici la commande : 
+Il vous suffit désormais de lancer le node fourni en utilisant la commande suivante:
+ros2 launch rslidar_sdk start.py
   
   Si vous ne voyez rien sur RVIZ, c'est que le fichier de configuration de rs_lidar_ws est mal configuré, il vous faut changer le fichier config.yaml dans le répertoire suivant => ros2_lidar_ws/src/rslidar_sdk/config
   Dans notre cas, il a fallu changer le paramètre indiquant le type de Lidar utilisé (Nous avons mis lidar_type : RS16 , car notre LiDAR est le LiDAR 16 couches RoboSense.
