@@ -47,3 +47,13 @@ Les messages standard CAN ont été transférés sans problème, nous avons pu e
 ## Conclusion :
 La seule conclusion à laquelle nous sommes parvenu, après toutes ces recherches, est qu'il y a un problème avec le radar lui-même. Il n'envoie aucune information, que nous le testions à l'intérieur ou à l'extérieur. 
 
+
+# Software
+Tout le code nécessaire pour avoir des nodes ROS2 pour récupérer les données du radar se trouve dans le radar_ws fourni, il y a plusieurs nodes executables.
+Lorsque vous avez téléchargé ce workspace , il vous suffit de le "sourcer" : source install/setup.bash
+
+Puis vous pouvez lancer les nodes avec la commande suivante :
+ros2 launch radar_conti_ars408 radar.launch.py
+
+
+ros2socketcan.h semble important car il permet de lire les informations provenant du radar et de les envoyer sur un topic, il est intéressant pour tester la reception de données du radar (lorsque le radar marchera)
